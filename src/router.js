@@ -6,6 +6,7 @@ import VueRouter from 'vue-router';
 
 // on importe les composants qui vont servir à la navigation
 import HomepageView from './views/HomepageView';
+import LoginView from './views/LoginView';
 
 // on informe VueJS qu'on va utiliser VueRouter
 Vue.use(VueRouter);
@@ -13,7 +14,8 @@ Vue.use(VueRouter);
 // on définit nos routes
 // on lie des url (path) à des composants (component)
 const routes = [
-  { path: '/', component: HomepageView }
+  { path: '/', component: HomepageView },
+  { path: '/connexion', component: LoginView }
 ];
 
 // on instancie le routeur en lui fournissant notre array de routes
