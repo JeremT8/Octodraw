@@ -1,49 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Octodraw</title>
-    <link rel="stylesheet" href="scss/main.scss">
-</head>
-
-
-
-
-<body>
-    <header class="header logo-only">
-        <div class="logo-container">
-            <img class="logo" src="~/images/">
-        </div>
-            <div class="text-container"> 
-                <nav>
-                    <a href="#">HOME</a>
-                    <a href="#">ABOUT</a>
-                    <a href="#">BLOG</a>
-                    <a href="#">CONTACT</a>
-                    <a href="#">EXHIBITIONS</a>
-                </nav>
-                <nav>
-                    <a href="#">LOGIN</a>
-                </nav>
-            </div>
-
-            <img src="#">
-            <h1>IMMERSE YOURSELF IN THIS <br> CREATIVE ESCAPE</h1>
-            <a href="#">DISCOVER THE THEME</a>
-    </header>
-    <main class="main-container">
-        <div id="carousel">
-            <carousel-3d>
-              <slide v-for="(slide, i) in slides" :index="i">
-                <img src="https://placehold.it/360x270">
-              </slide>
-            </carousel-3d>
-          </div>
-    </main>
-
-
-
+<template>
     <footer class="footer">
         <div class="logo-container">
             <img class="logo" src="~/images/">
@@ -78,6 +33,15 @@
             </nav>
         </div>
     </footer>
-    <script src="./main.js"></script>
-</body>
-</html>
+</template>
+
+<script>
+export default {
+    
+}
+</script>
+
+<style lang="scss" scoped>
+
+</style>
+

@@ -9,10 +9,12 @@
 
 <script>
 import Carousel from '../components/Carousel';
+import Carousel3d from 'vue-carousel-3d';
 
 export default {
     components: {
         Carousel
     }
 }
+Vue.use(Carousel3d);
 </script>
