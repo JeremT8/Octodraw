@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const apiBaseURL = 'http://benoit-le-mailloux.vpnuser.lan/projet-o-ctodraw/wp-json';
+const apiBaseURL = 'http://localhost/apotheose/projet-o-ctodraw/wp-json';
 
 // on déclare le module
 const userService = {

@@ -6,7 +6,7 @@
           class="field__input"
           type="email"
           placeholder="Email address"
-          v-model="username"
+          v-model="email"
         />
         <div class="error-message">{{ errors.email }}</div>
       </div>
@@ -29,23 +29,24 @@ import userService from '../services/UserService';
 export default {
     data() {
         return {
-            username: '',
+            email: '',
             password: '',
             errors: {
-                username: '',
+                email: '',
                 password: ''
             }
         };
     },
+    
     methods: {
         onFormSubmit(event) {
             // voir RegisterForm pour le fonctionnement de la validation
             this.errors = {
-                username: '',
+                email: '',
                 password: ''
             };
-            if (this.username.length === 0) {
-                this.errors.username = "Le nom d'utilisateur ne peut pas être vide !";
+            if (this.email.length === 0) {
+                this.errors.email = "Le nom d'utilisateur ne peut pas être vide !";
             }
             if (this.password.length === 0) {
                 this.errors.password = "Le mot de passe ne peut pas être vide !";

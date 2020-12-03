@@ -1,7 +1,7 @@
 <template>
     <footer class="footer">
         <div class="logo-container">
-            <img class="logo" src="~/images/">
+            <img class="logo" src="">
         </div>
         <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ducimus molestiae harum tenetur nemo voluptates, aperiam dolores enim cum iusto dicta consequatur optio ut omnis quam beatae aliquam quae quos voluptas nam quasi unde vero architecto! Corporis ducimus nisi quo.</div>
         <div>
