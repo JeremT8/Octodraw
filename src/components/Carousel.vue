@@ -27,5 +27,5 @@ Vue.use(Carousel3d);
 </script>
 
 <style lang="scss" scoped>
-
+  
 </style>

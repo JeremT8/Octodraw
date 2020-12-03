@@ -12,7 +12,7 @@
 import Vue from 'vue';
 import Header from  "./components/Header";
 import Footer from "./components/Footer";
-// import userService from "./services/UserService"; 
+import userService from "./services/UserService"; 
 
 export default Vue.extend({
   data() {

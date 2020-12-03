@@ -38,5 +38,11 @@ export default {
 </script>
 
 <style scoped>
-
+header{
+    background-image: url("../assets/images/vague_rouge_octodraw.svg");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    height: 60vh;
+    width: 100vw;
+}
 </style>
