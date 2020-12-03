@@ -43,5 +43,12 @@ export default {
 
 <style lang="scss" scoped>
 
+footer{
+    background-image: url("../assets/images/vague_rouge_inversee_octodraw.svg");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    height: 60vh;
+    width: 100vw;
+}
 </style>
 
