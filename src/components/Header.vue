@@ -2,7 +2,7 @@
 <template>
     <header class="header logo-only">
         <div class="logo-container">
-            <img class="logo" src="~/images/">
+            <img class="logo" src="">
         </div>
             <div class="text-container"> 
                 <nav>
