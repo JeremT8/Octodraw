@@ -5,7 +5,7 @@
                 <img src="https://placehold.it/360x270">
               </slide>
             </carousel-3d>
-          </div>
+  </div>
 </template>
 
 <script>
