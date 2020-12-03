@@ -3,18 +3,16 @@
     les views seront instanciées par le routeur -->
     <main class="main-container">
         <h1>Carousel</h1>
-        <Carousel></Carousel>
     </main>
 </template>
 
 <script>
-import Carousel from '../components/Carousel';
-import Carousel3d from 'vue-carousel-3d';
+
 
 export default {
     components: {
-        Carousel
+        
     }
 }
-Vue.use(Carousel3d);
+
 </script>

@@ -2,7 +2,7 @@ import Vue from 'vue';
 // on importe le routeur
 import VueRouter from 'vue-router';
 // on importe les services nécessaires
-// import userService from './services/UserService';
+import userService from './services/UserService';
 
 // on importe les composants qui vont servir à la navigation
 import HomepageView from './views/HomepageView';
