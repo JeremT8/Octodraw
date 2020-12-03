@@ -15,17 +15,15 @@ const userService = {
         // on veut renvoyer un booleen (ici avec une double inversion)
         return !!userService.token;
     },
-    registerUser() {
-        
-    },
-    connectUser(username, password) {
+    
+    connectUser(email, password) {
         // on return la promesse d'axios pour permettre au composant qui appelera cette méthode de faire quelque chose lorsque la requête est réussie (avec .then())
         return axios.post(apiBaseURL + '/jwt-auth/v1/token', {
             // au lieu de déclarer :
             //    username: username,
             //    password: password
             // on peut raccourcir : 
-            username,
+            email,
             password
         })
         .then((response) => {
