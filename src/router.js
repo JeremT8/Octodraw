@@ -7,7 +7,11 @@ import userService from './services/UserService';
 // on importe les composants qui vont servir à la navigation
 import HomepageView from './views/HomepageView';
 import LoginView from './views/LoginView';
+
 import DrawingView from './views/DrawingView';
+
+import RegisterView from './views/RegisterView';
+
 
 // on informe VueJS qu'on va utiliser VueRouter
 Vue.use(VueRouter);
@@ -17,7 +21,11 @@ Vue.use(VueRouter);
 const routes = [
   { path: '/', component: HomepageView },
   { path: '/connexion', component: LoginView },
+
   { path: '/ajout', component: DrawingView }
+
+  { path: '/inscription', component: RegisterView }
+
 ];
 
 // on instancie le routeur en lui fournissant notre array de routes
