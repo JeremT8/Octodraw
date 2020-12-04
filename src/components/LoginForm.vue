@@ -5,11 +5,11 @@
         <h1 style="text-align: center">WE ARE WAITING FOR YOU</h1>
         <input
           class="field__input"
-          type="email"
-          placeholder="Email address"
-          v-model="email"
+          type="text"
+          placeholder="identifiant"
+          v-model="username"
         />
-        <div class="error-message">{{ errors.email }}</div>
+        <div class="error-message">{{ errors.username }}</div>
       </div>
       <div class="field">
         <input
@@ -32,10 +32,10 @@ import userService from '../services/UserService';
 export default {
     data() {
         return {
-            email: '',
+            username: '',
             password: '',
             errors: {
-                email: '',
+                username: '',
                 password: ''
             }
         };
@@ -45,11 +45,11 @@ export default {
         onFormSubmit(event) {
             // voir RegisterForm pour le fonctionnement de la validation
             this.errors = {
-                email: '',
+                username: '',
                 password: ''
             };
-            if (this.email.length === 0) {
-                this.errors.email = "Le nom d'utilisateur ne peut pas être vide !";
+            if (this.username.length === 0) {
+                this.errors.username = "Le nom d'utilisateur ne peut pas être vide !";
             }
             if (this.password.length === 0) {
                 this.errors.password = "Le mot de passe ne peut pas être vide !";
@@ -65,7 +65,7 @@ export default {
             }  
             
             // connectuser retourne la promesse d'axios
-            userService.connectUser(this.email, this.password)
+            userService.connectUser(this.username, this.password)
             .then(() => {
               // on exécute ce code lorsque la promesse retournée par axios.post() dans userUservice est résolue
               // au sein d'un composant, on peut utiliser this.$router pour avoir accès à l'instance du router passée à VueJS dans index.js
