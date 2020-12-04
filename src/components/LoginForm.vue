@@ -79,6 +79,14 @@ export default {
 
 <style lang="scss" scoped>
 
+
+.error-message {
+  color: red;
+}
+
+
+
+
 .field
     {
      text-align:center;
@@ -103,4 +111,5 @@ export default {
 .underline{
   text-decoration: underline;
 }
+
 </style>
