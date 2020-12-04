@@ -7,9 +7,7 @@ import userService from './services/UserService';
 // on importe les composants qui vont servir à la navigation
 import HomepageView from './views/HomepageView';
 import LoginView from './views/LoginView';
-
 import DrawingView from './views/DrawingView';
-
 import RegisterView from './views/RegisterView';
 
 
