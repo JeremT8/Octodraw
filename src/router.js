@@ -19,7 +19,13 @@ Vue.use(VueRouter);
 const routes = [
   { path: '/', component: HomepageView },
   { path: '/connexion', component: LoginView },
+
+
   { path: '/ajout', component: DrawingView },
+
+
+  { path: '/ajout', component: DrawingView },
+
   { path: '/inscription', component: RegisterView }
 ];
 

@@ -2,6 +2,7 @@
   <form v-on:submit.prevent="onFormSubmit">
     <fieldset>
       <div class="field">
+        <h1 style="text-align: center">WE ARE WAITING FOR YOU</h1>
         <input
           class="field__input"
           type="text"
@@ -18,10 +19,12 @@
           v-model="password"
         />
         <div class="error-message">{{ errors.password }}</div>
+        <button class="button">OCTOSUBMIT</button>
+        <div style="text-align: center">Aren't you part of your family yet ? <p class="underline">Come quickly !</p></div>
       </div>
     </fieldset>
-    <button class="button">OCTOSUBMIT</button>
   </form>
+  
 </template>
 
 <script>
@@ -75,4 +78,29 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.field
+    {
+     text-align:center;
+     margin:0 auto;
+     padding:0px;
+    }
+
+.button{
+  border: none;
+  color: white;
+  border-radius: 30px;
+  background-image: linear-gradient(to right, #e53120 , #ab3120);
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.underline{
+  text-decoration: underline;
+}
 </style>
