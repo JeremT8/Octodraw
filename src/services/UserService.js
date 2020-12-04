@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const apiBaseURL = 'http://localhost/apotheose/projet-o-ctodraw/wp-json';
+const apiBaseURL = 'http://ec2-35-153-93-141.compute-1.amazonaws.com/projet-o-ctodraw/wp-json';
 
 // on déclare le module
 const userService = {
@@ -16,14 +16,14 @@ const userService = {
         return !!userService.token;
     },
     
-    connectUser(email, password) {
+    connectUser(username, password) {
         // on return la promesse d'axios pour permettre au composant qui appelera cette méthode de faire quelque chose lorsque la requête est réussie (avec .then())
         return axios.post(apiBaseURL + '/jwt-auth/v1/token', {
             // au lieu de déclarer :
             //    username: username,
             //    password: password
             // on peut raccourcir : 
-            email,
+            username,
             password
         })
         .then((response) => {
