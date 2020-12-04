@@ -1,0 +1,36 @@
+{
+  "name": "projet-o-ctodraw-front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "parcel-bundler": "^1.12.4",
+    "reset-css": "^5.0.1",
+    "router": "^1.3.5",
+    "sass": "^1.29.0",
+    "vue": "^2.6.12",
+    "vue-carousel-3d": "^1.0.1",
+    "vue-hot-reload-api": "^2.3.4",
+    "vue-router": "^3.4.9"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^3.2.0",
+    "cssnano": "^4.1.10",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/O-clock-Kraken/projet-o-ctodraw-front.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/O-clock-Kraken/projet-o-ctodraw-front/issues"
+  },
+  "homepage": "https://github.com/O-clock-Kraken/projet-o-ctodraw-front#readme"
+}
