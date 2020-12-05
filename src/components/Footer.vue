@@ -60,16 +60,18 @@ nav {
       justify-content: space-around;
       padding: 1rem;
       flex-direction: column;
-      color: #ecf4e9;
+      color: black
+      ;
       
   
       a {
         font-weight: bold;
-        color: #ecf4e9;
+        color: black;
         
 
         &.router-link{
-           color: #ecf4e9; 
+           color: black
+           ; 
         }
       }
 }

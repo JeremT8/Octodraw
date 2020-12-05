@@ -24,15 +24,6 @@ export default {
 
 <style>
 
-main {
-    border-radius: 15px;
-    padding: 40px;
-    width: 350px;
-    height: 150px;
-    background-image: linear-gradient(to right, #0d2578 , #0d2638);
-    color: white;
-}
-
 .tentacule_bleue {
     width:250px;
 }
