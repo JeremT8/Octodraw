@@ -40,38 +40,7 @@ export default {
     }
 }
 
-nav {
-      align-items: center;
-      justify-content: space-around;
-      padding: 1rem;
-      flex-direction: column;
 
-      color: black
-      ;
-      
-  
-      a {
-        font-weight: bold;
-        color: black;
-        
-
-      color: #ecf4e9;
-
-      a {
-        font-weight: bold;
-        color: #ecf4e9;
-        text-decoration: none;
-        position: absolute;
-        bottom: 0;
-        margin-bottom: 4rem;
-
-
-        &.router-link{
-           color: black
-           ; 
-        }
-      }
-}
 
 .container {
   display: flex; /* or inline-flex */
