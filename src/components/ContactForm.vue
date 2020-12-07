@@ -173,11 +173,24 @@ export default {
   }
   .contactform {
     text-align:center;
-    margin: 5% 15%;
+    margin: 45% 15%;
     
   }
 }
 
+@media screen and (min-width: 601px) {
+  .button {
+    //font-size: 1rem;
+    width: 10rem;
+    text-align: center;
+    padding: 10px 22px;
+  }
+  .contactform {
+    text-align:center;
+    margin: 15% 10%;
+    
+  }
+}
 
 .mt-3{
   padding-bottom: 2.5%;
