@@ -46,16 +46,7 @@ nav {
       padding: 1rem;
       flex-direction: column;
 
-      color: black
-      ;
-      
-  
-      a {
-        font-weight: bold;
-        color: black;
-        
-
-      color: #ecf4e9;
+      color: black;
 
       a {
         font-weight: bold;
@@ -67,8 +58,7 @@ nav {
 
 
         &.router-link{
-           color: black
-           ; 
+           color: black; 
         }
       }
 }
