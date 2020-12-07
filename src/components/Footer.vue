@@ -1,39 +1,18 @@
 <template>
     <footer class="footer">
-        <div class="container"> 
-            <div class="logo-container">
-                <img class="logo" src="/assets/images/kraken.svg">
+        <div class="container">            
+                <div>
+                    <nav class="footer-container-links">
+                        <h3 class="footer-links">QUICK LINKS</h3>
+                        <ul>
+                            <li><router-link to="/">Home</router-link></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#"><h3>CONTACT US</h3></a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ducimus molestiae harum tenetur nemo voluptates, aperiam dolores enim cum iusto dicta consequatur optio ut omnis quam beatae aliquam quae quos voluptas nam quasi unde vero architecto! Corporis ducimus nisi quo.</div>
-                
-                <div>
-                    <nav>
-                        <h3>QUICK LINKS</h3>
-                        <router-link to="/">Home</router-link>
-                        <a href="#">About us</a>
-                        <a href="#">Services</a>
-                        <a href="#">Blog</a>
-                        <a href="#">Contact</a>
-                    </nav>
-                </div>
-                <div>
-                    <nav>
-                        <h3>RESSOURCES</h3>
-                        <a href="#">Support</a>
-                        <a href="#">Private Policy</a>
-                        <a href="#">Terms & Condition</a>
-                        <a href="#">Sitemap</a>
-                    </nav>
-                </div>
-                <div>
-                    <nav>
-                        <h3>CONTACT US</h3>
-                        <a href="#">Support</a>
-                        <a href="#">Private Policy</a>
-                        <a href="#">Terms & Condition</a>
-                        <a href="#">Sitemap</a>
-                    </nav>
-                </div>
         </div>
     </footer>
 </template>
@@ -47,12 +26,18 @@ export default {
 <style lang="scss" scoped>
 
 .footer{
-    background-image: url("../assets/images/vague_rouge_inversee_octodraw.svg");
+    background-image: url("../assets/images/vague_rouge_inversee_octodraw2.svg");
     background-repeat: no-repeat;
-    background-size:100% 100%;
-    height: 60vh;
+    background-size:cover;
+    height: 40vh;
     width: 100vw;
-    display: flex;
+    position: absolute;
+    bottom: 0;
+
+    .footer-container-links {
+        list-style:none;
+
+    }
 }
 
 nav {
@@ -61,26 +46,24 @@ nav {
       padding: 1rem;
       flex-direction: column;
       color: #ecf4e9;
-      
-  
+
       a {
         font-weight: bold;
         color: #ecf4e9;
-        
+        text-decoration: none;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 4rem;
 
         &.router-link{
            color: #ecf4e9; 
         }
       }
 }
+
 .container {
   display: flex; /* or inline-flex */
   justify-content: flex-end;
 }
-.logo {
-    width: 70px;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-</style>
 
+</style>

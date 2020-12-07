@@ -5,7 +5,7 @@
         <div class="tentacule_bleue">
             <img src="../assets/images/tentacules_bleu_octodraw.svg">
         </div>
-    <main class="main-container">
+    <main class="main-blue">
         
         <LoginForm></LoginForm>
        
@@ -24,7 +24,7 @@ export default {
 
 <style>
 
-main {
+.main-blue {
     border-radius: 15px;
     padding: 40px;
     width: 350px;
