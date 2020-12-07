@@ -161,7 +161,24 @@ export default {
   font-size: 16px;
   margin: 20px 0 0 0;
   cursor: pointer;
+  
 }
+
+@media screen and (max-width: 600px) {
+  .button {
+    //font-size: 1rem;
+    width: 10rem;
+    text-align: center;
+    padding: 10px 22px;
+  }
+  .contactform {
+    text-align:center;
+    margin: 5% 15%;
+    
+  }
+}
+
+
 .mt-3{
   padding-bottom: 2.5%;
 }
