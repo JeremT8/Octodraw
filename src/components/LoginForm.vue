@@ -1,5 +1,5 @@
 <template>
-  <form v-on:submit.prevent="onFormSubmit">
+  <form class="formlogin" v-on:submit.prevent="onFormSubmit">
     <fieldset>
       <div class="field">
         <h1 style="text-align: center">WE ARE WAITING FOR YOU</h1>
@@ -79,12 +79,18 @@ export default {
 
 <style lang="scss" scoped>
 
+.formlogin {
+    border-radius: 15px;
+    padding: 40px;
+    width: 350px;
+    height: 150px;
+    background-image: linear-gradient(to right, #0d2578 , #0d2638);
+    color: white;
+}
 
 .error-message {
   color: red;
 }
-
-
 
 
 .field

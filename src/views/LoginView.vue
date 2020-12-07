@@ -24,6 +24,8 @@ export default {
 
 <style>
 
+
+
 .main-blue {
     border-radius: 15px;
     padding: 40px;
@@ -32,6 +34,7 @@ export default {
     background-image: linear-gradient(to right, #0d2578 , #0d2638);
     color: white;
 }
+
 
 .tentacule_bleue {
     width:250px;

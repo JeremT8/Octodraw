@@ -45,6 +45,16 @@ nav {
       justify-content: space-around;
       padding: 1rem;
       flex-direction: column;
+
+      color: black
+      ;
+      
+  
+      a {
+        font-weight: bold;
+        color: black;
+        
+
       color: #ecf4e9;
 
       a {
@@ -55,8 +65,10 @@ nav {
         bottom: 0;
         margin-bottom: 4rem;
 
+
         &.router-link{
-           color: #ecf4e9; 
+           color: black
+           ; 
         }
       }
 }
