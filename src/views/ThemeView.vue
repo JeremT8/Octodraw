@@ -2,21 +2,17 @@
     <!-- le rôle des views est d'instancier les éléments qui composent une page
     les views seront instanciées par le routeur -->
     <main class="main-container">
-        <Carousel></Carousel>
+        <h1>Thèmes</h1>
     </main>
 </template>
 
 <script>
-import Carousel from '../components/Carousel';
+
 
 export default {
     components: {
-        Carousel
+        
     }
 }
 
 </script>
-
-<style lang="scss" scoped>
-
-</style>
