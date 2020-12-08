@@ -13,7 +13,7 @@ export default {
 <style lang="scss" scoped>
 
 .image404 {
-  background-image: url("../assets/images/618egtClBSL._AC_SX450_.jpg");
+  background-image: url("../assets/images/background404.jpg");
 }
 
 </style>
