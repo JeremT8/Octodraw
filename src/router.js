@@ -14,6 +14,7 @@ import ProfileView from './views/ProfileView';
 import ContactView from './views/ContactView';
 
 import ThemeView from './views/ThemeView';
+import Page404View from './views/Page404View';
 
 
 
@@ -31,7 +32,8 @@ const routes = [
   { path: '/profil', component: ProfileView },
   { path: '/contact', component: ContactView },
 
-  { path: '/themes', component: ThemeView }
+  { path: '/themes', component: ThemeView },
+  { path: '/404', component: Page404View }
 
 ];
 

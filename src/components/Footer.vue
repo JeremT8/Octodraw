@@ -12,7 +12,6 @@
                         </ul>
                     </nav>
                 </div>
-            </div>
         </div>
     </footer>
 </template>
