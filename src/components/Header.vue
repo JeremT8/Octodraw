@@ -8,7 +8,6 @@
                     <a href="#"></a>
                 </div>
             </div>
-        
             <div class="nav-btn">
                 <label for="nav-check">
                     <span></span>
@@ -16,13 +15,12 @@
                     <span></span>
                 </label>
             </div>
-  
             <div class="nav-links">
                 <router-link tag="a" to="/"><a>HOME</a></router-link>
-                <a href="#" target="_blank">ABOUT</a>
+               <router-link tag="a" to="/a-propos"><a>ABOUT US</a></router-link>
                 <a href="#" target="_blank">CONTACT</a>
                 <router-link tag="a" to="/connexion"><a>LOGIN</a></router-link>
-                <button class="register-button"><router-link tag="a" to="/inscription"><a>GET STARTED</a></router-link></button>
+                <router-link tag="a" to="/inscription"><a class="register-button">GET STARTED</a></router-link>
             </div>
         </div>
         <div class="header-title">
@@ -32,7 +30,6 @@
         </div>
     </header>
 </template>
-
 <script>
     import userService from '../services/UserService';
     export default {
@@ -48,23 +45,20 @@
 </script>
 
 <style lang="scss" scoped>
-
 .header {
     background-image: url("../assets/images/grande_vague_rouge_octodraw.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 40vh;
+    height: 120vh;
     width: 100vw;
 }
-
 .header-title {
     display: flex;
     flex-direction: column;
 }
-
 h1 {
     font-family: "Comfortaa Bold";
-    color: black;
+    color: #ecf4e9;
     font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
@@ -73,14 +67,12 @@ h1 {
     display: block;
     line-height: 1;
 }
-
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 601px) {
   h1 {
     font-size: 2rem;
   }
 }
-
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
   h1 {
@@ -88,7 +80,6 @@ h1 {
     width: 20rem;
   }
 }
-
 .logo {
     width: 4%;
     position: absolute;
@@ -97,17 +88,15 @@ h1 {
     margin-top: 1rem;
     margin-left: 2rem;
 }
-
 .illustration {
     display: block;
     margin: auto;
-    margin-top: 4rem;
-    margin-bottom: 2rem;
+    margin-top: 14rem;
+    margin-bottom: 18rem;
 }
-
 .button {
     border: none;
-    color: white;
+    color: #ecf4e9;
     border-radius: 30px;
     background-image: linear-gradient(to right, #0d2578 , #0d2638);
     padding: 10px 32px;
@@ -118,9 +107,6 @@ h1 {
     margin: auto;
     text-transform: uppercase;
     margin-top: 1rem;
-
-    cursor: pointer;
-
     a {
         font-weight: bold;
         color: #ecf4e9;
@@ -129,10 +115,9 @@ h1 {
         font-family: 'Comfortaa';
     }
 }
-
 .register-button {
     border: none;
-    color: white;
+    color: #ecf4e9;
     border-radius: 30px;
     background-image: linear-gradient(to right, #ab3120 , #e53120);
     padding: 10px 32px;
@@ -143,9 +128,6 @@ h1 {
     margin: auto;
     text-transform: uppercase;
     margin-top: 1rem;
-
-    cursor: pointer;
-
     a {
         font-weight: bold;
         color: #ecf4e9;
@@ -154,16 +136,13 @@ h1 {
         font-family: 'Comfortaa';
     }
 }
-
 * {
     box-sizing: border-box;
 }
-
 body {
     margin: 0px;
     font-family: 'segoe ui';
 }
-
 .nav {
     height: 50px;
     width: 100%;
@@ -171,46 +150,38 @@ body {
     display:flex;
     justify-content: flex-end;
 }
-
 .nav > .nav-header {
     display: inline;
 }
-
 .nav > .nav-header > .nav-title {
     display: inline-block;
     font-size: 22px;
-    color: #fff;
+    color: #ecf4e9;
     padding: 10px 10px 10px 10px;
 }
-
 .nav > .nav-btn {
     display: none;
 }
-
 .nav > .nav-links {
     display: inline;
     float: right;
     font-size: 18px;
     margin-right: 2rem;
 }
-
 .nav > .nav-links > a {
     display: inline-block;
     text-decoration: none;
-    color: #efefef;
+    color: #ecf4e9;
     margin-top: 1rem;
     text-align: center;
     padding: 1rem;
 }
-
 .nav > .nav-links > a:hover {
     color: #0d2578;
 }
-
 .nav > #nav-check {
     display: none;
 }
-
 @media (max-width:600px) {
     .nav > .nav-btn {
         display: inline-block;
@@ -231,7 +202,7 @@ body {
         display: block;
         width: 25px;
         height: 10px;
-        border-top: 2px solid #eee;
+        border-top: 2px solid #ecf4e9;
     }
     .nav > .nav-links {
         position: absolute;
@@ -256,5 +227,4 @@ body {
         overflow-y: auto;
     }
 }
-
 </style>
