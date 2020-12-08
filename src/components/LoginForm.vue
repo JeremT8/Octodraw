@@ -36,7 +36,7 @@ export default {
             password: '',
             errors: {
                 username: '',
-                password: ''
+                password: '',
             }
         };
     },
