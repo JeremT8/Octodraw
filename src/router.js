@@ -16,6 +16,7 @@ import ContactView from './views/ContactView';
 import ThemeView from './views/ThemeView';
 
 
+import UserGaleryView from './views/UserGaleryView';
 
 // on informe VueJS qu'on va utiliser VueRouter
 Vue.use(VueRouter);
@@ -31,8 +32,9 @@ const routes = [
   { path: '/profil', component: ProfileView },
   { path: '/contact', component: ContactView },
 
-  { path: '/themes', component: ThemeView }
+  { path: '/themes', component: ThemeView },
 
+  { path: '/user-galery', component: UserGaleryView }
 ];
 
 // on instancie le routeur en lui fournissant notre array de routes
