@@ -1,10 +1,20 @@
 <template>
     <!-- le rôle des views est d'instancier les éléments qui composent une page
     les views seront instanciées par le routeur -->
-    <main class="main-container">
-        <h1>Créer un compte</h1>
-        <RegisterForm></RegisterForm>
-    </main>
+    <div>
+        <main>
+            <h1>Créer un compte</h1>
+            <div class="bla">
+                
+                        <img class="illustrateur" src="../assets/images/illustrateur_octodraw.svg">
+                
+                
+                        <img class="amateur" src="../assets/images/amateur_octodraw.svg">
+                
+            </div>
+            <RegisterForm></RegisterForm>
+        </main>
+    </div>
 </template>
 
 <script>
@@ -15,3 +25,65 @@ export default {
     }
 }
 </script>
+
+<style>
+.bla {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.illustrateur{
+    margin: auto;
+}
+
+.amateur{
+    margin: unset;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) and (max-width: 991px) {
+  .images {
+    width: 70%;
+  }
+}
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .images {
+    width: 80%;
+    padding: 1rem;
+  }
+}
+.illustrateur {
+    width:20%;
+    display: block;
+    margin: auto;
+    margin-bottom: -3.6rem;
+    margin-right: 0 !important;
+}
+.amateur {
+    width:20%;
+    display: block;
+    margin: auto;
+    margin-bottom: -3.6rem;
+    margin-left: 0 !important;
+}
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) and (max-width: 991px) {
+  .illustrateur {
+    width: 45%;
+  }
+  .amateur {
+    width: 45%;
+  }
+}
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .illustrateur {
+    width: 45%;
+  }
+  .amateur {
+    width: 45%;
+  }
+}
+</style>

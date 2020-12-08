@@ -17,8 +17,6 @@ import userService from "./services/UserService";
 
 
 
-//import Footer from "./components/Footer";
-import userService from "./services/UserService"; 
 
 
 export default Vue.extend({
