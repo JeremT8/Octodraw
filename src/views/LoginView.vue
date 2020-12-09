@@ -5,11 +5,11 @@
         <div class="tentacule_bleue">
             <img src="../assets/images/tentacules_bleu_octodraw.svg">
         </div>
-    <main class="main-blue">
+        <main class="main-blue">
+            
+            <LoginForm></LoginForm>
         
-        <LoginForm></LoginForm>
-       
-    </main>
+        </main>
     </div>
 </template>
 
