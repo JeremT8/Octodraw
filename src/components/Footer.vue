@@ -27,6 +27,7 @@
         list-style:none;
     }
 }
+
 nav {
       color: #ecf4e9;
       margin-bottom: 1rem;
@@ -49,5 +50,13 @@ nav {
           display: flex;
           justify-content: center;
       }
+
+
+
+
+.container {
+  display: flex; /* or inline-flex */
+  justify-content: flex-end;
+
 }
 </style>
