@@ -45,7 +45,7 @@ nav {
         margin-right: 2rem;
         font-size: 1rem;
         font-family: Helvetica, sans-serif;
-
+        
         &.router-link{
            color: #ecf4e9; 
       }
@@ -58,9 +58,4 @@ nav {
 }
 
 
-
-
-
-
-}
 </style>
