@@ -18,7 +18,9 @@
             </div>
             <div class="nav-links">
                 <router-link tag="a" to="/"><a>HOME</a></router-link>
-                 <router-link tag="a" to="/a-propos"><a>ABOUT US</a></router-link>
+
+               <router-link tag="a" to="/a-propos"><a>ABOUT US</a></router-link>
+
                 <a href="#" target="_blank">CONTACT</a>
                 <router-link tag="a" to="/connexion"><a>LOGIN</a></router-link>
                 <router-link tag="a" to="/inscription"><a class="register-button">GET STARTED</a></router-link>
@@ -49,6 +51,7 @@
     background-image: url("../assets/images/grande_vague_rouge_octodraw.svg");
     background-repeat: no-repeat;
     background-size: cover;
+
     height: 105vh;
     width: 100vw;
 }
@@ -93,6 +96,7 @@ h1 {
     margin-left: 2rem;
 }
 
+
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 601px) and (max-width: 991px) {
   .logo {
@@ -107,6 +111,7 @@ h1 {
     width: 8%;
   }
 }
+
 
 
 .illustration {
@@ -139,6 +144,7 @@ h1 {
 }
 
 
+
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 601px) and (max-width: 991px) {
   .button {
@@ -148,6 +154,7 @@ h1 {
     border-radius: 40px;
   }
 }
+
 
 
 .register-button {
@@ -174,12 +181,14 @@ h1 {
 }
 
 
+
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 601px) and (max-width: 991px) {
   .register-button {
     font-size: 0.7rem;
   }
 }
+
 
 
 * {
@@ -224,6 +233,7 @@ body {
 }
 
 
+
 .nav > .nav-links > a {
     display: inline-block;
     text-decoration: none;
@@ -241,6 +251,7 @@ body {
     margin-top: -0.5rem;
   }
 }
+
 
 .nav > .nav-links > a:hover {
     color: #0d2578;
@@ -269,6 +280,7 @@ body {
         width: 25px;
         height: 10px;
         border-top: 2px solid #ecf4e9;
+
 
     }
     .nav > .nav-links {
@@ -303,6 +315,7 @@ body {
         height: 10px;
         border-top: 2px solid #eee;
 
+
     }
     .nav > .nav-links {
         position: absolute;
@@ -327,5 +340,4 @@ body {
         overflow-y: auto;
     }
 }
-
 </style>
