@@ -227,7 +227,10 @@ body {
         overflow-y: auto;
     }
 }
-</style> > .nav-btn > label > span {
+
+</style>
+    .nav > .nav-btn > label > span {
+
         display: block;
         width: 25px;
         height: 10px;

@@ -1,9 +1,11 @@
 <template>
-    <footer class="footer">       
+
+    <footer class="footer">
             <nav class="footer-container-links">
                 <ul>
                     <li><router-link to="/">Home</router-link></li>
-                    <li><a href="#">About us</a></li>
+                    <li><router-link to="/a-propos">About us</router-link></li>
+
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
@@ -23,6 +25,11 @@
     bottom: 0;
     display: inline-flex; /* or inline-flex */
     align-items: flex-end;
+
+    /*position: fixed;*/
+    
+
+
     .footer-container-links {
         list-style:none;
     }
@@ -42,6 +49,7 @@ nav {
         margin-right: 2rem;
         font-size: 1rem;
         font-family: Helvetica, sans-serif;
+
         &.router-link{
            color: #ecf4e9; 
       }
@@ -54,9 +62,7 @@ nav {
 
 
 
-.container {
-  display: flex; /* or inline-flex */
-  justify-content: flex-end;
+
 
 }
 </style>
