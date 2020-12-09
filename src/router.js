@@ -10,6 +10,8 @@ import LoginView from './views/LoginView';
 import DrawingView from './views/DrawingView';
 import RegisterView from './views/RegisterView';
 import ThemeView from './views/ThemeView';
+import AboutUsView from './views/AboutUsView';
+import ChallengeResultsView from './views/ChallengeResultsView';
 
 
 // on informe VueJS qu'on va utiliser VueRouter
@@ -22,7 +24,9 @@ const routes = [
   { path: '/connexion', component: LoginView },
   { path: '/ajout', component: DrawingView },
   { path: '/inscription', component: RegisterView },
-  { path: '/themes', component: ThemeView }
+  { path: '/themes', component: ThemeView },
+  { path: '/a-propos', component: AboutUsView},
+  { path: '/resultats', component: ChallengeResultsView},
 ];
 
 // on instancie le routeur en lui fournissant notre array de routes

@@ -2,16 +2,16 @@
     <!-- le rôle des views est d'instancier les éléments qui composent une page
     les views seront instanciées par le routeur -->
     <main class="main-container">
-        <Theme></Theme>
+        <ChallengeResults></ChallengeResults>
     </main>
 </template>
 
 <script>
-import Theme from '../components/Theme';
+import ChallengeResults from '../components/ChallengeResults';
 
 export default {
     components: {
-        Theme
+        ChallengeResults
     }
 }
 
