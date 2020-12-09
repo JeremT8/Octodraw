@@ -1,8 +1,7 @@
 <template>
     <!-- le rôle des views est d'instancier les éléments qui composent une page
     les views seront instanciées par le routeur -->
-    <main class="main-container">
-        <h1></h1>
+    <main class="container">
         <ProfileForm></ProfileForm>
     </main>
 </template>
@@ -18,13 +17,7 @@ export default {
 
 <style scoped>
 
-.main-container {
-    background-color: #f0f;
-    margin: 5% 35%;
-    
-    
-    
-}
+
 
 
 
