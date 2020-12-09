@@ -60,6 +60,7 @@
 .header-title {
     display: flex;
     flex-direction: column;
+    margin-top: -9%;
 }
 
 h1 {

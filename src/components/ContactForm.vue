@@ -141,12 +141,11 @@ export default {
 <style lang="scss" scoped>
 .contactform{
   text-align:center;
-  margin: 5% 25%;
   padding: 20px 40px;
   border-radius: 30px;
   background-image: linear-gradient(to right, #e53120 , #ab3120);
   color: #0d2578;
-
+  margin: 5% 15%;
   font-family: Comfortaa Medium;
 }
 .button{
@@ -164,6 +163,20 @@ export default {
   
 }
 
+@media (min-width: 992px) {
+  .container, .container-sm, .container-md, .container-lg {
+    max-width: 1200px;
+  } 
+}
+
+@media screen and (min-width: 601px) {
+  .contactform {
+    text-align:center;
+    margin: 5% 10%;
+    
+  }
+}
+
 @media screen and (max-width: 600px) {
   .button {
     //font-size: 1rem;
@@ -173,10 +186,12 @@ export default {
   }
   .contactform {
     text-align:center;
-    margin: 5% 15%;
-    
+    margin: 20% 5%;
+    padding: 20px 20px;
   }
 }
+
+
 
 
 .mt-3{
