@@ -1,4 +1,5 @@
 <template>
+
     <footer class="footer">       
             <nav class="footer-container-links">
                 <ul>
@@ -7,6 +8,7 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
+
     </footer>
 </template>
 <script>
