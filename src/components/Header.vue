@@ -93,6 +93,10 @@ h1 {
     margin-left: 2rem;
 }
 
+.header {
+    height: 150vh;
+}
+
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 601px) and (max-width: 991px) {
   .logo {
