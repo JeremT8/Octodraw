@@ -3,24 +3,16 @@
     <fieldset>
       <div class="field">
         <h1 style="text-align: center">WE ARE WAITING FOR YOU</h1>
-        <input
-          class="field__input"
-          type="text"
-          placeholder="identifiant"
-          v-model="username"
-        />
+        <label for="name">Identifiant :</label>
+        <input class="field__input" type="text" placeholder="Identifiant" v-model="username"/>
         <div class="error-message">{{ errors.username }}</div>
       </div>
       <div class="field">
-        <input
-          class="field__input"
-          type="password"
-          placeholder="Mot de passe"
-          v-model="password"
-        />
+        <label for="name">Mot de passe :</label>
+        <input class="field__input" type="password" placeholder="Mot de passe" v-model="password"/>
         <div class="error-message">{{ errors.password }}</div>
         <button class="button">OCTOSUBMIT</button>
-        <div style="text-align: center">Aren't you part of your family yet ? <p class="underline">Come quickly !</p></div>
+        <p>Aren't you part of your family yet ? <span class="underline">Come quickly !</span></p>
       </div>
     </fieldset>
   </form>
@@ -79,6 +71,7 @@ export default {
 
 <style lang="scss" scoped>
 
+
 .formlogin {
     border-radius: 15px;
     padding: 40px;
@@ -88,21 +81,56 @@ export default {
     color: white;
 }
 
+
 .error-message {
-  color: red;
+  color: #e53120;
+  margin-top: 1rem;
+}
+
+.field {
+     text-align: center;
+     margin: auto;
+     padding:0px;
+     margin-top: 1rem;
+     color: black;
+     display: block;
 }
 
 
-.field
-    {
-     text-align:center;
-     margin:0 auto;
-     padding:0px;
-    }
+input {
+      border-radius: 20px;
+      padding-left: 1rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      width: 70%;
+}
 
-.button{
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  input {
+    width: 85%;
+  }
+}
+
+label {
+  color: #ecf4e9;
+  text-align: right;
+  display: inline-block;
+  width:20%;
+}
+
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  label {
+    width: 50%;
+    text-align: center;
+  }
+}
+
+.button {
   border: none;
-  color: white;
+  color: #ecf4e9;
   border-radius: 30px;
   background-image: linear-gradient(to right, #e53120 , #ab3120);
   padding: 10px 32px;
@@ -110,12 +138,61 @@ export default {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .button {
+    margin-top: 1rem;
+  }
 }
 
 .underline{
-  text-decoration: underline;
+  border-bottom: 1px solid #ecf4e9;
+}
+
+h1 {
+    font-family: "Comfortaa Bold";
+    color: #ecf4e9;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin: auto;
+    display: block;
+    margin-bottom: 2rem;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) and (max-width: 991px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1rem;
+  }
+}
+
+p {
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  color: #ecf4e9;
+  margin-bottom: 2rem;
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  p {
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
 }
 
 </style>

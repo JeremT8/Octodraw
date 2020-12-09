@@ -14,8 +14,9 @@ import ProfileView from './views/ProfileView';
 import ContactView from './views/ContactView';
 
 import ThemeView from './views/ThemeView';
+import AboutUsView from './views/AboutUsView';
+import ChallengeResultsView from './views/ChallengeResultsView';
 import GaleryView from './views/GaleryView';
-
 
 import UserGaleryView from './views/UserGaleryView';
 
@@ -30,6 +31,11 @@ const routes = [
   { path: '/ajout', component: DrawingView },
   { path: '/inscription', component: RegisterView },
 
+  { path: '/themes', component: ThemeView },
+  { path: '/a-propos', component: AboutUsView},
+  { path: '/resultats', component: ChallengeResultsView},
+
+
   { path: '/profil', component: ProfileView },
   { path: '/contact', component: ContactView },
 
@@ -39,6 +45,7 @@ const routes = [
 
 
   { path: '/user-galery', component: UserGaleryView }
+
 ];
 
 // on instancie le routeur en lui fournissant notre array de routes
