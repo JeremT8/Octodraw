@@ -14,6 +14,7 @@ import ProfileView from './views/ProfileView';
 import ContactView from './views/ContactView';
 
 import ThemeView from './views/ThemeView';
+import GaleryView from './views/GaleryView';
 
 
 import UserGaleryView from './views/UserGaleryView';
@@ -33,6 +34,9 @@ const routes = [
   { path: '/contact', component: ContactView },
 
   { path: '/themes', component: ThemeView },
+
+  { path: '/galerie', component: GaleryView },
+
 
   { path: '/user-galery', component: UserGaleryView }
 ];

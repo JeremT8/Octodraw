@@ -43,7 +43,6 @@
         }
     }
 </script>
-
 <style lang="scss" scoped>
 .header {
     background-image: url("../assets/images/grande_vague_rouge_octodraw.svg");
@@ -55,6 +54,7 @@
 .header-title {
     display: flex;
     flex-direction: column;
+    margin-top: -9%;
 }
 h1 {
     font-family: "Comfortaa Bold";
@@ -227,8 +227,10 @@ body {
         overflow-y: auto;
     }
 }
+
 </style>
     .nav > .nav-btn > label > span {
+
         display: block;
         width: 25px;
         height: 10px;
