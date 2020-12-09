@@ -14,8 +14,11 @@ import ProfileView from './views/ProfileView';
 import ContactView from './views/ContactView';
 
 import ThemeView from './views/ThemeView';
+import AboutUsView from './views/AboutUsView';
+import ChallengeResultsView from './views/ChallengeResultsView';
+import GaleryView from './views/GaleryView';
 
-
+import UserGaleryView from './views/UserGaleryView';
 
 // on informe VueJS qu'on va utiliser VueRouter
 Vue.use(VueRouter);
@@ -28,10 +31,20 @@ const routes = [
   { path: '/ajout', component: DrawingView },
   { path: '/inscription', component: RegisterView },
 
+  { path: '/themes', component: ThemeView },
+  { path: '/a-propos', component: AboutUsView},
+  { path: '/resultats', component: ChallengeResultsView},
+
+
   { path: '/profil', component: ProfileView },
   { path: '/contact', component: ContactView },
 
-  { path: '/themes', component: ThemeView }
+  { path: '/themes', component: ThemeView },
+
+  { path: '/galerie', component: GaleryView },
+
+
+  { path: '/user-galery', component: UserGaleryView }
 
 ];
 
