@@ -2,17 +2,15 @@
     <!-- le rôle des views est d'instancier les éléments qui composent une page
     les views seront instanciées par le routeur -->
     <main class="main-container">
-        <ContactForm></ContactForm>
+        <UserGalery></UserGalery>
     </main>
 </template>
 
 <script>
-
-import ContactForm from '../components/ContactForm';
-
+import UserGalery from '../components/UserGalery';
 export default {
     components: {
-        ContactForm
+        UserGalery
     }
 }
 
