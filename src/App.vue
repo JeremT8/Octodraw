@@ -5,7 +5,7 @@
     <!-- C'est ici que VueRouter instanciera le composant correspondant à la route courante -->
     <router-view></router-view>
 
-    <Footer></Footer> 
+    <FooterConnected></FooterConnected> 
 
   </div>
 </template>
@@ -14,7 +14,8 @@
 import Vue from 'vue';
 import Header from  "./components/Header";
 
-import Footer from "./components/Footer";
+import FooterConnected from "./components/FooterConnected";
+// import Footer from "./components/Footer";
 import userService from "./services/UserService"; 
 
 
@@ -25,7 +26,7 @@ export default Vue.extend({
   },
   components: {
     Header,
-    Footer,
+    FooterConnected,
 
   }
 });

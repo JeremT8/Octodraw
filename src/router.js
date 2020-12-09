@@ -45,7 +45,7 @@ const routes = [
 
   { path: '/themes', component: ThemeView },
 
-  { path: '/404', component: Page404View }
+  { path: '/404', component: Page404View },
 
 
   { path: '/galerie', component: GaleryView },
