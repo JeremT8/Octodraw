@@ -9,15 +9,11 @@
             </nav>
     </footer>
 </template>
-
 <script>
     export default {
-        
     }
 </script>
-
 <style lang="scss" scoped>
-
 .footer{
     background-image: url("../assets/images/vague_rouge_inversee_octodraw2.svg");
     background-repeat: no-repeat;
@@ -27,6 +23,7 @@
     bottom: 0;
     display: inline-flex; /* or inline-flex */
     align-items: flex-end;
+    /*position: fixed;*/
     
     .footer-container-links {
         list-style:none;
@@ -48,7 +45,7 @@ nav {
         margin-right: 2rem;
         font-size: 1rem;
         font-family: Helvetica, sans-serif;
-      
+
         &.router-link{
            color: #ecf4e9; 
       }
@@ -57,6 +54,13 @@ nav {
           display: flex;
           justify-content: center;
       }
+
 }
 
+
+
+
+
+
+}
 </style>

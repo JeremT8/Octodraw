@@ -1,5 +1,5 @@
 <template>
-  <form v-on:submit.prevent="onFormSubmit">
+  <form class="formlogin" v-on:submit.prevent="onFormSubmit">
     <fieldset>
       <div class="field">
         <h1 style="text-align: center">WE ARE WAITING FOR YOU</h1>
@@ -28,7 +28,7 @@ export default {
             password: '',
             errors: {
                 username: '',
-                password: ''
+                password: '',
             }
         };
     },
@@ -71,6 +71,17 @@ export default {
 
 <style lang="scss" scoped>
 
+
+.formlogin {
+    border-radius: 15px;
+    padding: 40px;
+    width: 350px;
+    height: 150px;
+    background-image: linear-gradient(to right, #0d2578 , #0d2638);
+    color: white;
+}
+
+
 .error-message {
   color: #e53120;
   margin-top: 1rem;
@@ -84,6 +95,7 @@ export default {
      color: black;
      display: block;
 }
+
 
 input {
       border-radius: 20px;
@@ -106,6 +118,7 @@ label {
   display: inline-block;
   width:20%;
 }
+
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {

@@ -16,7 +16,6 @@
                     <span></span>
                 </label>
             </div>
-  
             <div class="nav-links">
                 <router-link tag="a" to="/"><a>HOME</a></router-link>
                  <router-link tag="a" to="/a-propos"><a>ABOUT US</a></router-link>
@@ -32,7 +31,6 @@
         </div>
     </header>
 </template>
-
 <script>
     import userService from '../services/UserService';
     export default {
@@ -46,9 +44,7 @@
         }
     }
 </script>
-
 <style lang="scss" scoped>
-
 .header {
     background-image: url("../assets/images/grande_vague_rouge_octodraw.svg");
     background-repeat: no-repeat;
@@ -56,12 +52,11 @@
     height: 105vh;
     width: 100vw;
 }
-
 .header-title {
     display: flex;
     flex-direction: column;
+    margin-top: -9%;
 }
-
 h1 {
     font-family: "Comfortaa Bold";
     color: #ecf4e9;
@@ -73,7 +68,6 @@ h1 {
     display: block;
     line-height: 1;
 }
-
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 601px) and (max-width: 991px) {
   h1 {
@@ -82,7 +76,6 @@ h1 {
     margin-top: -3rem;
   }
 }
-
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
   h1 {
@@ -91,7 +84,6 @@ h1 {
     margin-top: -10rem;
   }
 }
-
 .logo {
     width: 4%;
     position: absolute;
@@ -116,13 +108,13 @@ h1 {
   }
 }
 
+
 .illustration {
     display: block;
     margin: auto;
     margin-top: 14rem;
     margin-bottom: 18rem;
 }
-
 .button {
     border: none;
     color: #ecf4e9;
@@ -146,6 +138,7 @@ h1 {
     }
 }
 
+
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 601px) and (max-width: 991px) {
   .button {
@@ -155,6 +148,7 @@ h1 {
     border-radius: 40px;
   }
 }
+
 
 .register-button {
     border: none;
@@ -179,6 +173,7 @@ h1 {
     }
 }
 
+
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 601px) and (max-width: 991px) {
   .register-button {
@@ -186,15 +181,14 @@ h1 {
   }
 }
 
+
 * {
     box-sizing: border-box;
 }
-
 body {
     margin: 0px;
     font-family: 'segoe ui';
 }
-
 .nav {
     height: 50px;
     width: 100%;
@@ -202,22 +196,18 @@ body {
     display:flex;
     justify-content: flex-end;
 }
-
 .nav > .nav-header {
     display: inline;
 }
-
 .nav > .nav-header > .nav-title {
     display: inline-block;
     font-size: 22px;
     color: #ecf4e9;
     padding: 10px 10px 10px 10px;
 }
-
 .nav > .nav-btn {
     display: none;
 }
-
 .nav > .nav-links {
     display: inline;
     float: right;
@@ -225,12 +215,14 @@ body {
     margin-right: 2rem;
 }
 
+
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 601px) and (max-width: 991px) {
   .nav > .nav-links {
     margin-right: 1rem;
   }
 }
+
 
 .nav > .nav-links > a {
     display: inline-block;
@@ -240,6 +232,7 @@ body {
     text-align: center;
     padding: 1rem;
 }
+
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 601px) and (max-width: 991px) {
@@ -252,11 +245,9 @@ body {
 .nav > .nav-links > a:hover {
     color: #0d2578;
 }
-
 .nav > #nav-check {
     display: none;
 }
-
 @media (max-width:600px) {
     .nav > .nav-btn {
         display: inline-block;
@@ -278,6 +269,40 @@ body {
         width: 25px;
         height: 10px;
         border-top: 2px solid #ecf4e9;
+
+    }
+    .nav > .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #ab3120;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+    .nav > .nav-links > a {
+        display: block;
+        width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+        height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+}
+
+</style>
+    .nav > .nav-btn > label > span {
+
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+
     }
     .nav > .nav-links {
         position: absolute;

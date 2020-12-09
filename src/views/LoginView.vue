@@ -5,11 +5,11 @@
         <div class="tentacule_bleue">
             <img src="../assets/images/tentacules_bleu_octodraw.svg">
         </div>
-    <main class="main-blue">
+        <main class="main-blue">
+            
+            <LoginForm></LoginForm>
         
-        <LoginForm></LoginForm>
-       
-    </main>
+        </main>
     </div>
 </template>
 
@@ -23,6 +23,8 @@ export default {
 </script>
 
 <style>
+
+
 
 .main-blue {
     border-radius: 25px;
@@ -49,6 +51,7 @@ export default {
     padding: 1rem;
   }
 }
+
 
 .tentacule_bleue {
     width:20%;
