@@ -18,10 +18,10 @@
             </div>
             <div class="nav-links">
                 <router-link tag="a" to="/"><a>HOME</a></router-link>
-                 <router-link tag="a" to="/a-propos"><a>ABOUT US</a></router-link>
-                <a href="#" target="_blank">CONTACT</a>
-                <router-link tag="a" to="/connexion"><a>LOGIN</a></router-link>
-                <router-link tag="a" to="/inscription"><a class="register-button">GET STARTED</a></router-link>
+                <router-link tag="a" to="/a-propos"><a>ABOUT US</a></router-link>
+                <router-link tag="a" to="/contact"><a>CONTACT</a></router-link>
+                <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" alt="avatar">
+                <router-link tag="a" to="/profil"><a>Name[id]</a></router-link>
             </div>
         </div>
         <div class="header-title">
@@ -45,11 +45,16 @@
     }
 </script>
 <style lang="scss" scoped>
+.img-thumbnail {
+  border-radius: 10rem;
+  width: 6%;
+  margin-left: 15%;
+}
+
 .header {
-    background-image: url("../assets/images/grande_vague_rouge_octodraw.svg");
+    background-image: url("../assets/images/grande_vague_bleue_octodraw.svg");
     background-repeat: no-repeat;
     background-size: cover;
-
     height: 130vh;
     width: 100vw;
 }
@@ -76,6 +81,7 @@ h1 {
     width: 40rem;
     margin-top: -3rem;
   }
+
 }
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
@@ -85,6 +91,7 @@ h1 {
     margin-top: -10rem;
   }
 }
+
 .logo {
     width: 4%;
     position: absolute;
@@ -96,12 +103,14 @@ h1 {
 
 
 
+
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 601px) and (max-width: 991px) {
   .logo {
     margin-top: 1.3rem;
     width: 6%;
   }
+  
 }
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
@@ -109,6 +118,7 @@ h1 {
   .logo {
     width: 8%;
   }
+  
 }
 
 
@@ -176,6 +186,10 @@ h1 {
     }
 }
 
+.register-button:hover {
+  color: #0d2578;
+}
+
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 601px) and (max-width: 991px) {
@@ -216,6 +230,7 @@ body {
     float: right;
     font-size: 18px;
     margin-right: 2rem;
+    font-family: "Comfortaa Bold";
 }
 
 
@@ -246,7 +261,7 @@ body {
 }
 
 .nav > .nav-links > a:hover {
-    color: #0d2578;
+    color: #e53120;
 }
 .nav > #nav-check {
     display: none;
@@ -274,11 +289,14 @@ body {
         border-top: 2px solid #ecf4e9;
 
     }
+    .img-thumbnail {
+      display: none;
+    }
     .nav > .nav-links {
         position: absolute;
         display: block;
         width: 100%;
-        background-color: #ab3120;
+        background-color: #0d2578;
         height: 0px;
         transition: all 0.3s ease-in;
         overflow-y: hidden;
