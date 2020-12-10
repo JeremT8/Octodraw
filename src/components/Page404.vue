@@ -1,32 +1,40 @@
 <template>
     <div class="image404">
       <!--<img src="../assets/images/618egtClBSL._AC_SX450_.jpg">-->
-      <h1>OOUPS ! Une grosse gomme a dû effacer cette page ! </h1><button class="button"> Retour a l'accueil </button>
-        <b-img class="god" src="https://media.gettyimages.com/illustrations/vatican-museums-and-galleries-vatican-city-italy-illustration-id55994891?k=6&m=55994891&s=612x612&w=0&h=EFXGalQosq4v-0LGZdL3sh_DHK8Ybb2ZXHraUqg8eNw=" fluid-grow alt="Responsive image"></b-img>
-        
+      <div class="image-text">
+        <h1>OOUPS ! Une grosse gomme a dû effacer cette page ! </h1>
+        <button class="button"> Retour a l'accueil </button>
+        </div>
     </div>
 </template>
-
 <script>
 export default {
-    
 }
 </script>
-
 <style lang="scss" scoped>
-
-b-img {
-  
-background-repeat: no-repeat;
-background-size: cover;
-position: fixed; 
-top: 80px;
-left: 0;
+.image-text {
+  text-align: center;
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: Comfortaa Medium;
 }
-img {
-  margin-left: 0;
+.image404 {
+  background-image: url("https://media.gettyimages.com/illustrations/vatican-museums-and-galleries-vatican-city-italy-illustration-id55994891?k=6&m=55994891&s=612x612&w=0&h=EFXGalQosq4v-0LGZdL3sh_DHK8Ybb2ZXHraUqg8eNw=");
+  background-color: #cccccc;
+  height: 750px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+  margin-top: -20rem;
+  margin-bottom: -20rem;
 }
-
 .button{
   border: none;
   color: white;
@@ -40,5 +48,4 @@ img {
   margin: 20px 0 0 0;
   cursor: pointer;
 }
-
 </style>
