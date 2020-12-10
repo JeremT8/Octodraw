@@ -54,6 +54,7 @@
 
     height: 105vh;
     width: 100vw;
+    
 }
 .header-title {
     display: flex;
@@ -96,12 +97,6 @@ h1 {
     margin-left: 2rem;
 }
 
-<<<<<<< HEAD
-.header {
-    height: 150vh;
-}
-=======
->>>>>>> 1a0f2bd4b8fb18bd22ba9ed4431c69fc3d8f30bf
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 601px) and (max-width: 991px) {
