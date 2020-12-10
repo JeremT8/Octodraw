@@ -143,16 +143,17 @@ export default {
   text-align:center;
   padding: 20px 40px;
   border-radius: 30px;
-  background-image: linear-gradient(to right, #e53120 , #ab3120);
-  color: #0d2578;
+  background-image: linear-gradient(to right, #0d2578 , #0d2638);
+  color: #ecf4e9;
   margin: 5% 15%;
-  font-family: Comfortaa Medium;
+  font-family: Comfortaa Bold;
+  font-size: 1.2em;
 }
 .button{
   border: none;
   color: white;
   border-radius: 30px;
-  background-image: linear-gradient(to right, #0d2578 , #0d2638);
+  background-image: linear-gradient(to right, #e53120 , #ab3120);
   padding: 10px 32px;
   text-align: center;
   text-decoration: none;
@@ -211,7 +212,7 @@ export default {
 
 
 .mt-3{
-  padding-bottom: 2.5%;
+  padding-bottom: 0.8%;
 }
 
 </style>

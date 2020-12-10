@@ -41,12 +41,11 @@
 </script>
 <style lang="scss" scoped>
 .header {
-    background-image: url("../assets/images/grande_vague_rouge_octodraw.svg");
+    background-image: url("../assets/images/grande_vague_bleue_octodraw.svg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 130vh;
     width: 100vw;
-    
 }
 
 .logo {
@@ -57,6 +56,7 @@
     margin-top: 1rem;
     margin-left: 2rem;
 }
+
 
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
@@ -78,7 +78,7 @@
     border: none;
     color: #ecf4e9;
     border-radius: 30px;
-    background-image: linear-gradient(to right, #0d2578 , #0d2638);
+    background-image: linear-gradient(to right, #ab3120 , #e53120);
     padding: 10px 32px;
     text-align: center;
     text-decoration: none;
@@ -106,7 +106,7 @@
 }
 
 .register-button:hover {
-  color: #e53120;
+  color: #0d2578;
 }
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
@@ -147,6 +147,7 @@ body {
     float: right;
     font-size: 18px;
     margin-right: 2rem;
+    font-family: "Comfortaa Bold";
 }
 
 
@@ -177,7 +178,7 @@ body {
 }
 
 .nav > .nav-links > a:hover {
-    color: #0d2578;
+    color: #e53120;
 }
 .nav > #nav-check {
     display: none;
@@ -208,12 +209,12 @@ body {
         border-top: 2px solid #ecf4e9;
 
     }
-
+    
     .nav > .nav-links {
         position: absolute;
         display: block;
         width: 100%;
-        background-color: #ab3120;
+        background-color: #0d2578;
         height: 0px;
         transition: all 0.3s ease-in;
         overflow-y: hidden;

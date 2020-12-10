@@ -17,7 +17,7 @@
 </script>
 <style lang="scss" scoped>
 .footer{
-    background-image: url("../assets/images/vague_rouge_inversee_octodraw.svg");
+    background-image: url("../assets/images/vague_bleue_inversee_octodraw.svg");
     background-repeat: no-repeat;
     background-size:cover;
     height: 40vh;
@@ -56,6 +56,7 @@ nav {
           display: flex;
           justify-content: center;
       }
+      
 
 }
 
