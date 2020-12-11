@@ -7,8 +7,8 @@
                     <h3 class="name">VANINA</h3>
                     <span class="role">Product Owner & Scrum Master</span>
                     <ul class="social">
-                        <li><a href="#"><i class="b-icon-pencil-fill"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-github"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
                         <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
                     </ul>
                 </div>
@@ -20,8 +20,8 @@
                     <h3 class="name">WENDY</h3>
                     <span class="role">Lead Dev Front</span>
                     <ul class="social">
-                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fab fa-github"></i></a></li>
                         <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
                     </ul>
                 </div>
@@ -33,9 +33,9 @@
                     <h3 class="name">JEREMY</h3>
                     <span class="role">Git Master</span>
                     <ul class="social">
-                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-github"></i></a></li>
                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -46,8 +46,8 @@
                     <h3 class="name">BENOIT</h3>
                     <span class="role">Lead Dev Back</span>
                     <ul class="social">
-                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fab fa-github"></i></a></li>
                         <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
                     </ul>
                 </div>
@@ -239,7 +239,6 @@
     content: "";
     width: 100%;
     height: 100%;
-    background: #ecf4e9;
     position: absolute;
     top: 0;
     left: -100%;

@@ -1,39 +1,41 @@
 <template>
   <form v-on:submit.prevent="onFormSubmit">
-          <fieldset>
+          <fieldset class="registerform">
             <div class="add-drawing">
               <img class="drawing" src="">
             </div>
-
             <div>
               <div
                 class="imagePreviewWrapper"
                 :style="{ 'background-image': `url(${previewImage})` }"
                 @click="selectImage">
               </div>
+          <!-- TODO PENSEZ A AJOUTER LE SELECT POUR CHOISIR QUEL TYPE DE DESSIN C'EST -->
 
+            <div class="text-center">
+              <b-button class="button_type" v-b-popover.hover.left="'Le croquis ou esquisse est [...]'" title="Croquis">
+                CROQUIS
+              </b-button>
+              <b-button class="button_type" v-b-popover.hover.right= "'La planche de dessin est [...]'" title="Planche">
+                PLANCHE
+              </b-button>
+            </div>
+
+            
+            <div>
               <input
+                class="file"
                 ref="fileInput"
                 type="file"
-                @input="pickFile">
+                @input="pickFile"
+                accept=".png, .jpg, .jpeg, .svg">
             </div>
 
 
-              <!-- TODO PENSEZ A AJOUTER LE SELECT POUR CHOISIR QUEL TYPE DE DESSIN C'EST -->
-
-              
-            <div class="field">
-                <label class="field__label"></label>
-                <input
-                    class="field__input"
-                    type="text"
-                    placeholder="Ajouter le dessin"
-                    v-model="drawing"
-                />
-            </div>
+            
 
             <div class="field">
-                <label class="field__label"></label>
+                <label class="field__label"> Ajouter un nom à votre oeuvre</label><br>
                 <input
                     class="field__input"
                     type="text"
@@ -43,7 +45,7 @@
             </div>
 
             <div class="field">
-                <label class="field__label"></label>
+                <label class="field__label"> Une citation pour accompagner l'oeuvre</label><br>
                 <input
                     class="field__input"
                     type="text"
@@ -53,7 +55,7 @@
             </div>
 
             <div class="field">
-                <label class="field__label"></label>
+                <label class="field__label"> Description de l'oeuvre</label><br>
                 <input
                     class="field__input"
                     type="text"
@@ -97,12 +99,77 @@ export default {
 
 <style scoped lang="scss">
 .imagePreviewWrapper {
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    height: 300px;
     display: block;
     cursor: pointer;
     margin: 0 auto 30px;
     background-size: cover;
     background-position: center center;
+}
+
+.registerform{
+  text-align:center;
+  margin: 10% 25%;
+  padding: 20px 40px;
+  border-radius: 30px;
+  background-image: linear-gradient(to right, #e53120 , #ab3120);
+  color: #0d2578;
+  display: flex;
+  flex-direction: column;
+  font-family: Comfortaa Medium;
+}
+
+.button{
+  border: none;
+  color: white;
+  border-radius: 30px;
+  background-image: linear-gradient(to right, #0d2578 , #0d2638);
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  display: flex;
+  //flex-direction: row;
+  justify-content: center;
+  margin: 20px 0 0 40%;
+  cursor: pointer;
+}
+
+p {
+  margin-top: 10px;
+}
+
+.button_type {
+  border: none;
+  color: white;
+  border-radius: 30px;
+  background-image: linear-gradient(to right, #0d2578 , #0d2638);
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  //display: flex;
+  //flex-direction: row;
+  //justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  margin: 25px 25px 10px 25px;
+  cursor: pointer;
+}
+
+
+.text-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.field__input {
+  border-radius: 20px;
+  width: 50%;
+}
+.file {
+  border-radius: 20px;
 }
 </style>

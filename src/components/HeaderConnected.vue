@@ -17,12 +17,12 @@
                 </label>
             </div>
             <div class="nav-links">
-                <router-link tag="a" to="/"><a>HOME</a></router-link>
-                <router-link tag="a" to="/a-propos"><a>ABOUT US</a></router-link>
+                <router-link tag="a" to="/"><a>ACCUEIL</a></router-link>
+                <router-link tag="a" to="/a-propos"><a>A PROPOS DE NOUS</a></router-link>
                 <router-link tag="a" to="/contact"><a>CONTACT</a></router-link>
 
-                <router-link tag="a" to="/connexion"><a>LOGIN</a></router-link>
-                <router-link tag="a" to="/inscription"><a class="register-button">GET STARTED</a></router-link>
+                <router-link tag="a" to="/connexion"><a>SE CONNECTER</a></router-link>
+                <router-link tag="a" to="/inscription"><a class="register-button">NOUS REJOINDRE</a></router-link>
             </div>
         </div>
 

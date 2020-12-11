@@ -17,7 +17,12 @@
         </div><!--/col-3-->
     	<div class="col-sm-9">
             <ul class="nav nav-tabs">
-                <li class="active"><a data-toggle="tab" href="#home">ACCUEIL</a></li>
+                <li class="active"><router-link tag="a" to="/"><a data-toggle="tab">ACCUEIL</a></router-link></li>
+              </ul>
+
+              <ul class="nav nav-tabs">
+                <li class="active"><router-link tag="a" to="/galerie-utilisateur"><a>MA GALLERIE</a></router-link></li>
+                
               </ul>
 
               

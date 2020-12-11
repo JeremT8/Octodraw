@@ -78,6 +78,7 @@
           {{ registrationFailureMessage }}
         </div>
         <button class="button">OCTOSUBMIT</button>
+        <p>Vous nous avez déjà rejoins ?  <router-link tag="a" to="/connexion"><a href="#">Connectez vous !</a></router-link></p>
       </form>
     </div>
   </div>
@@ -217,6 +218,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .registerform{
   text-align:center;
   margin: 5% 25%;
@@ -240,6 +242,10 @@ export default {
   font-size: 16px;
   margin: 20px 0 0 0;
   cursor: pointer;
+}
+
+p {
+  margin-top: 10px;
 }
 
 

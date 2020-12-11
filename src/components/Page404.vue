@@ -4,7 +4,8 @@
       <!--<img src="../assets/images/618egtClBSL._AC_SX450_.jpg">-->
       <div class="image-text">
         <h1>OOUPS ! Une grosse gomme a dû effacer cette page ! </h1>
-        <button class="button"> Retour a l'accueil </button>
+        <h3> Cette page est malheureusement introuvable... </h3>
+        <a><router-link class="button" to="/">Retour à l'accueil</router-link></a>
         </div>
     </div>
 </template>
@@ -36,7 +37,7 @@ export default {
 .image-text {
   text-align: center;
   position: absolute;
-  top: 50%;
+  top: 150%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
