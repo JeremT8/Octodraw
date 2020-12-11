@@ -1,5 +1,11 @@
 <template>
+    
     <div class="wrapper">
+        <div class="header-title">
+            <img class= "illustration" src=""/>
+            <h1>Immerse yourself in this creative escape</h1>
+            <router-link tag="a" to="/themes"><button class="button">Discover the theme</button></router-link>
+        </div>
         <img class="red_tentacles" src ="../assets/images/tentacules_rouge_octodraw.svg"/>
         <div class="contenu-carrousel">
             <div class="carrousel">
@@ -36,6 +42,66 @@
 </script>
 
 <style lang="scss" scoped>
+.header-title {
+    display: flex;
+    flex-direction: column;
+    margin-top: -60%;
+    margin-bottom: 22%;
+}
+h1 {
+    font-family: "Comfortaa Bold";
+    color: #ecf4e9;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    width: 40rem;
+    margin: auto;
+    display: block;
+    line-height: 1;
+}
+.button {
+    border: none;
+    color: #ecf4e9;
+    border-radius: 30px;
+    background-image: linear-gradient(to right, #0d2578 , #0d2638);
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: auto;
+    text-transform: uppercase;
+    margin-top: 1rem;
+
+    a {
+        font-weight: bold;
+        color: #ecf4e9;
+        text-decoration: none;
+        padding-top: 2rem;
+        font-family: 'Comfortaa';
+    }
+}
+.illustration {
+    display: block;
+    margin: auto;
+    margin-top: 14rem;
+    margin-bottom: 18rem;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) and (max-width: 991px) {
+  .button {
+    font-size: 1rem;
+    margin-top: 2rem;
+    padding: 15px 40px;
+    border-radius: 40px;
+    }
+    h1 {
+    font-size: 2rem;
+    width: 40rem;
+    margin-top: -3rem;
+    }
+}
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 601px) {
@@ -60,11 +126,17 @@
     margin: 0;
     width: 150px;
     height: 100px;
-}
+    }
+    h1 {
+    font-size: 1.5rem;
+    width: 20rem;
+    margin-top: -10rem;
+    }
+
 }
 
 .wrapper {
-    margin-top: 20rem;
+    margin-top: 8rem;
     margin-right: 0;
 }
 
