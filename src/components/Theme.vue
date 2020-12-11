@@ -21,7 +21,7 @@
                     <p class="go">A vos crayons, prêt ? Dessinez !!!</p>
                 <button class="register-button">Galerie planches</button>
             </div>
-        </div>  
+        </div>
         <button class="register-button">Participer</button>    
     </div>
 </template>
