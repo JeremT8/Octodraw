@@ -23,30 +23,30 @@
       
     <b-form-group
       id="fieldset-1"
-      label="Name"
+      label="Votre nom"
       label-for="input-1"
-      valid-feedback="Thank you !"
+      valid-feedback="Merci !"
     >
       <b-form-input id="input-1" v-model="name" trim></b-form-input>
     </b-form-group>
 
     <b-form-group
       id="fieldset-2"
-      label="Email"
+      label="Votre adresse E-mail"
       label-for="input-2"
-      valid-feedback="Thank you !"
+      valid-feedback="Merci !"
     >
       <b-form-input id="input-2" v-model="email" trim></b-form-input>
     </b-form-group>
 
     <!-- Select -->
-    <div class="mt-3">Tell us more about your subject: <strong>{{ selected }}</strong></div>
+    <div class="mt-3">Parlez-nous de votre sujet: <strong>{{ selected }}</strong></div>
     <b-form-select v-model="selected" :options="options" ></b-form-select>
 
-    <div class="mt-3">Put your message here</div>
+    <div class="mt-3">Decrivez nous votre requête :</div>
     <b-form-textarea
       id="textarea"
-      placeholder="Enter something..."
+      placeholder="Ecrivez ici..."
       rows="3"
       max-rows="6"
     >
@@ -85,23 +85,23 @@ export default {
         options: [
           { 
             value: null, 
-            text: 'Please select an option' 
+            text: 'Selectionnez' 
           },
           { 
-            value: 'Sketch', 
-            text: 'Sketch' 
+            value: 'Esquisse', 
+            text: 'Esquisse' 
           },
           { 
-            value: 'Drawing board', 
-            text: 'Drawing board' 
+            value: 'Planche de dessin', 
+            text: 'Planche de dessin' 
           },
           { 
-            value: 'Questions on the work of site', 
-            text: 'Questions on the work of site' 
+            value: 'Questions a propos du site', 
+            text: 'Questions a propos du site' 
           },
           { 
-            value: 'Other request', 
-            text: 'Other request' 
+            value: 'Autre demande', 
+            text: 'Autre demande' 
           }
         ],
         // Valeurs ci-dessous pour les champs du b-form-group (v-model)

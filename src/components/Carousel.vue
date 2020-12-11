@@ -1,29 +1,40 @@
 <template>
-    
-    <div class="wrapper">
-        <div class="header-title">
-            <img class= "illustration" src=""/>
-            <h1>Immerse yourself in this creative escape</h1>
-            <router-link tag="a" to="/themes"><button class="button">Discover the theme</button></router-link>
-        </div>
-        <img class="red_tentacles" src ="../assets/images/tentacules_rouge_octodraw.svg"/>
-        <div class="contenu-carrousel">
-            <div class="carrousel">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-        <div class=controle>
-            <button onclick="carrousel('-')">❮</button>
-            <button onclick="carrousel('')">❯</button>
-        </div>
-    </div>
+<div>
+<div class="tentacules">
+    <img src="../assets/images/tentacules_rouge_octodraw.svg" style="width: 20%; display: block; margin: auto;">
+</div>
+    <div class='caroussel_diapo'>
+<input checked id="carou_un" name="rotation" type="radio">
+<label for="carou_un"></label>
+<input id="carou_deux" name="rotation" type="radio">
+<label for="carou_deux"></label>
+<input id="carou_trois" name="rotation" type="radio">
+<label for="carou_trois"></label>
+<input id="carou_quatre" name="rotation" type="radio">
+<label for="carou_quatre"></label>
+<input id="carou_cinq" name="rotation" type="radio">
+<label for="carou_cinq"></label>
+<input id="carou_six" name="rotation" type="radio">
+<label for="carou_six"></label>
+<input id="carou_sept" name="rotation" type="radio">
+<label for="carou_sept"></label>
+<input id="carou_huit" name="rotation" type="radio">
+<label for="carou_huit"></label>
+<div class="contenu_carou">
+<div class="caroussel">
+<img src="../assets/images/carousel_carte_rouge_octodraw.svg" alt>
+<img src="../assets/images/carousel_carte_bleue_octodraw.svg" alt>
+<img src="../assets/images/carousel_carte_rouge_octodraw.svg" alt>
+<img src="../assets/images/carousel_carte_bleue_octodraw.svg" alt>
+<img src="../assets/images/carousel_carte_rouge_octodraw.svg" alt>
+<img src="../assets/images/carousel_carte_bleue_octodraw.svg" alt>
+<img src="../assets/images/carousel_carte_rouge_octodraw.svg" alt>
+<img src="../assets/images/carousel_carte_bleue_octodraw.svg" alt>
+</div>
+</div>	
+</div>
+</div>
 </template>
-
 <script>
     export default {
         data() {
@@ -40,188 +51,83 @@
         }
     }
 </script>
-
 <style lang="scss" scoped>
-.header-title {
-    display: flex;
-    flex-direction: column;
-    margin-top: -60%;
-    margin-bottom: 22%;
+/*****carrousel 3d avec navigation*****/
+*{box-sizing: border-box;}
+img{max-width:100%;}
+.caroussel_diapo input{position:absolute;left:-9999px;}
+.caroussel_diapo{
+text-align:center;
+margin: auto;
+display: flex;
+justify-content: center;
+margin-left: 8%;
 }
-h1 {
-    font-family: "Comfortaa Bold";
-    color: #ecf4e9;
-    font-size: 2rem;
-    text-align: center;
-    text-transform: uppercase;
-    width: 40rem;
-    margin: auto;
-    display: block;
-    line-height: 1;
+.contenu_carou {
+width:500px;
+height:332px;
+perspective:4000px;
+display: flex;
+justify-content: center;
+margin-left: -21.5%;
 }
-.button {
-    border: none;
-    color: #ecf4e9;
-    border-radius: 30px;
-    background-image: linear-gradient(to right, #0d2578 , #0d2638);
-    padding: 10px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 16px;
-    margin: auto;
-    text-transform: uppercase;
-    margin-top: 1rem;
-
-    a {
-        font-weight: bold;
-        color: #ecf4e9;
-        text-decoration: none;
-        padding-top: 2rem;
-        font-family: 'Comfortaa';
-    }
+.caroussel{
+transform-style:preserve-3d;
+position:relative;
+width:500px;
+height:332px;
+transition:1s;
 }
-.illustration {
-    display: block;
-    margin: auto;
-    margin-top: 14rem;
-    margin-bottom: 18rem;
+.caroussel img {
+position:absolute;
+top:0;left:0;
+outline:1px solid transparent;
+backface-visibility:hidden;
+transition:1s;
+border: 0.5rem solid #ecf4e9;
+border-radius: 30px;
 }
-
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 601px) and (max-width: 991px) {
-  .button {
-    font-size: 1rem;
-    margin-top: 2rem;
-    padding: 15px 40px;
-    border-radius: 40px;
-    }
-    h1 {
-    font-size: 2rem;
-    width: 40rem;
-    margin-top: -3rem;
-    }
+.caroussel img{filter:blur(3px);opacity:.8;}	
+.caroussel img:nth-child(1){transform:translate3d(0,0,540px) scale(.8);}
+.caroussel img:nth-child(2){transform:rotateY(45deg) translateZ(540px) scale(.8);}
+.caroussel img:nth-child(3){transform:rotateY(90deg) translateZ(540px) scale(.8);}
+.caroussel img:nth-child(4){transform:rotateY(135deg) translateZ(540px) scale(.8);}
+.caroussel img:nth-child(5){transform:rotateY(180deg) translateZ(540px) scale(.8);}
+.caroussel img:nth-child(6){transform:rotateY(225deg) translateZ(540px) scale(.8);}
+.caroussel img:nth-child(7){transform:rotateY(270deg) translateZ(540px) scale(.8);}
+.caroussel img:nth-child(8){transform:rotateY(315deg) translateZ(540px) scale(.8);}
+.caroussel_diapo input[type=radio] + label {
+cursor:pointer;
+display:inline-block;
+width:20px;
+border-radius:50%;
+height:20px;
+margin-top: 25rem;
+background-color: #e53120;
+margin-right: 0.5rem;
 }
-
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 601px) {
-    .wrapper {
-        font-size: 2rem;
-    }
-}
-
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 600px) {
-    .wrapper {
-        font-size: 1rem;
-        width: 20rem;
-        margin-top: 10rem;
-        margin-right: 0 !important;
-    }
-    .red_tentacles {
-        width: 15%;
-        margin: 0;
-    }
-    .contenu-carrousel {
-    margin: 0;
-    width: 150px;
-    height: 100px;
-    }
-    h1 {
-    font-size: 1.5rem;
-    width: 20rem;
-    margin-top: -10rem;
-    }
-
-}
-
-.wrapper {
-    margin-top: 8rem;
-    margin-right: 0;
-}
-
-.red_tentacles {
-    width: 15%;
-    display: block;
-    margin: auto;
-}
-
-*{box-sizing: border-box}
-
-body {
-    margin:0;
-    display:grid;
-    min-height:100vh;
-    place-items:center;
-}
-	
-.controle {
-    display:grid;
-    grid:2rem/repeat(2,1fr);
-    place-items:center;
-}
-	
-button { 
-    font-size: 2rem;
-    border: none;
-    cursor: pointer;
-    background: #eee;
-} 
-
-.contenu-carrousel {
-    margin: 5rem auto;
-    width: 300px;
-    height: 200px;
-    position: relative;
-    perspective: 1000px;
-    margin-top: 2rem;
-}
-
-.carrousel {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    transform-style: preserve-3d;
-    transition: transform 1s;
-}
-
-.carrousel div {	
-    backface-visibility: hidden;
-    box-shadow: 0 10px 10px rgba(0,0,0,.6);
-    position: absolute;
-    width: 300px;
-    height: 200px;
-    outline: 1px solid transparent;	
-}
-	
-.carrousel div:nth-child(1) {
-    transform: rotateY(0) translateZ(270px);
-    background:url("../assets/images/amateur_octodraw.svg" ) no-repeat center center/cover;
-}
-	
-.carrousel div:nth-child(2) {
-    transform: rotateY(60deg) translateZ(270px);
-    background:url("../assets/images/grande_vague_rouge_octodraw.svg") no-repeat center center/cover;
-}
-	
-.carrousel div:nth-child(3) {	
-    transform: rotateY(120deg) translateZ(270px);
-    background:url("../assets/images/kraken.svg") no-repeat center center/cover;
-}
-	
-.carrousel div:nth-child(4) {
-    transform: rotateY(180deg) translateZ(270px);
-    background:url("../assets/images/tentacules_bleu_octodraw.svg") no-repeat center center/cover;
-}
-	
-.carrousel div:nth-child(5) {
-    transform: rotateY(240deg) translateZ(270px);
-    background:url("../assets/images/tentacules_rouge_octodraw.svg") no-repeat center center/cover;	
-} 
-	
-.carrousel div:nth-child(6) {
-    transform: rotateY(300deg) translateZ(270px);
-    background:url("../assets/images/vague_rouge_octodraw.svg") no-repeat center center/cover;	
-}
-
+.caroussel_diapo input[type=radio]:checked + label{background-color: #0d2578;}
+.caroussel_diapo input[name="rotation"]:checked ~ .contenu_carou .caroussel img:nth-child(n){
+	filter:drop-shadow(12px 12px 7px hsla(0,0%,0%,.5));
+    border-bottom: 0.5rem solid #e53120;
+    border-top: 0.5rem solid #e53120;
+	}	
+/*gauche*/
+.caroussel_diapo #carou_un:checked ~ .contenu_carou .caroussel{transform:translateZ(-540px);}
+.caroussel_diapo #carou_deux:checked ~ .contenu_carou .caroussel{transform:translateZ(-540px) rotateY(-45deg);}
+.caroussel_diapo #carou_trois:checked ~ .contenu_carou .caroussel{transform:translateZ(-540px) rotateY(-90deg);}
+.caroussel_diapo #carou_quatre:checked ~ .contenu_carou .caroussel{transform:translateZ(-540px) rotateY(-135deg);}
+.caroussel_diapo #carou_cinq:checked ~ .contenu_carou .caroussel{transform:translateZ(-540px) rotateY(-180deg);}
+.caroussel_diapo #carou_six:checked ~ .contenu_carou .caroussel{transform:translateZ(-540px) rotateY(-225deg);}
+.caroussel_diapo #carou_sept:checked ~ .contenu_carou .caroussel{transform:translateZ(-540px) rotateY(-270deg);}
+.caroussel_diapo #carou_huit:checked ~ .contenu_carou .caroussel{transform:translateZ(-540px) rotateY(-315deg);}
+/*droite*/
+.caroussel_diapo #carou_un:checked ~ .contenu_carou .caroussel img:nth-child(1){transform:translateZ(540px) scale(1);opacity:1;}
+.caroussel_diapo #carou_deux:checked ~ .contenu_carou .caroussel img:nth-child(2){transform:rotateY(45deg) translateZ(540px) scale(1);opacity:1;}
+.caroussel_diapo #carou_trois:checked ~ .contenu_carou .caroussel img:nth-child(3){transform:rotateY(90deg) translateZ(540px) scale(1);opacity:1;}
+.caroussel_diapo #carou_quatre:checked ~ .contenu_carou .caroussel img:nth-child(4){transform:rotateY(135deg) translateZ(540px) scale(1);opacity:1;}
+.caroussel_diapo #carou_cinq:checked ~ .contenu_carou .caroussel img:nth-child(5){transform:rotateY(180deg) translateZ(540px) scale(1);opacity:1;}
+.caroussel_diapo #carou_six:checked ~ .contenu_carou .caroussel img:nth-child(6){transform:rotateY(225deg) translateZ(540px) scale(1);opacity:1;}
+.caroussel_diapo #carou_sept:checked ~ .contenu_carou .caroussel img:nth-child(7){transform:rotateY(270deg) translateZ(540px) scale(1);opacity:1;}
+.caroussel_diapo #carou_huit:checked ~ .contenu_carou .caroussel img:nth-child(8){transform:rotateY(315deg) translateZ(540px) scale(1);opacity:1;}
 </style>

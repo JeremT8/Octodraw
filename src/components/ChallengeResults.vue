@@ -88,7 +88,7 @@ export default {
 
 .planches {
     margin-left: 1rem;
-    margin-right: 1rem;
+    margin-right: 0;
 }
 
 .img-illustrateur {

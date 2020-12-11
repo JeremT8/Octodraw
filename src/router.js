@@ -15,13 +15,10 @@ import ContactView from './views/ContactView';
 
 import ThemeView from './views/ThemeView';
 
-import Page404View from './views/Page404View';
-
 import AboutUsView from './views/AboutUsView';
 import ChallengeResultsView from './views/ChallengeResultsView';
 
 import Page404View from './views/Page404View';
-import ContactView from './views/ContactView';
 
 import GaleryView from './views/GaleryView';
 
@@ -59,7 +56,7 @@ const routes = [
   { path: '/galerie', component: GaleryView },
 
 
-  { path: '/user-galery', component: UserGaleryView }
+  { path: '/galerie-utilisateur', component: UserGaleryView }
 
 
 ];

@@ -4,9 +4,9 @@
             <div class="footer-links">
 
                 <ul>
-                    <li><router-link to="/">Home</router-link></li>
-                    <li><router-link to="/a-propos">About us</router-link></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><router-link to="/">Accueil</router-link></li>
+                    <li><router-link to="/a-propos">A propos de nous</router-link></li>
+                    <li><router-link to="/contact">Contact</router-link></li>
                 </ul>
 
             </div>
@@ -21,7 +21,7 @@
 
 
 .footer {
-    background-image: url("../assets/images/vague_rouge_inversee_octodraw2.svg");
+    background-image: url("../assets/images/vague_rouge_inversee_octodraw.svg");
 
     background-repeat: no-repeat;
     background-size:cover;

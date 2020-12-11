@@ -3,8 +3,8 @@
     <footer class="footer">       
             <nav class="footer-container-links">
                 <ul>
-                    <li><router-link to="/">Home</router-link></li>
-                    <li><router-link to="/a-propos">About us</router-link></li>
+                    <li><router-link to="/">Accueil</router-link></li>
+                    <li><router-link to="/a-propos">A propos de nous</router-link></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>

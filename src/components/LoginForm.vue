@@ -2,7 +2,7 @@
   <form v-on:submit.prevent="onFormSubmit">
     <fieldset>
       <div class="field">
-        <h1 style="text-align: center">WE ARE WAITING FOR YOU</h1>
+        <h1 style="text-align: center">NOUS T'ATTENDONS</h1>
         <label for="name">Identifiant :</label>
         <input class="field__input" type="text" placeholder="Identifiant" v-model="username"/>
         <div class="error-message">{{ errors.username }}</div>
@@ -12,7 +12,7 @@
         <input class="field__input" type="password" placeholder="Mot de passe" v-model="password"/>
         <div class="error-message">{{ errors.password }}</div>
         <button class="button">OCTOSUBMIT</button>
-        <p>Aren't you part of your family yet ? <span class="underline">Come quickly !</span></p>
+        <p>Vous ne faites pas encore partie de notre famille? <router-link tag="a" to="/inscription"><a href="#" class="link_to_register">Rejoignez nous !</a></router-link></p>
       </div>
     </fieldset>
   </form>
@@ -161,5 +161,9 @@ p {
     margin: auto;
     margin-bottom: 2rem;
   }
+}
+
+.link_to_register {
+  color: #e53120;
 }
 </style>

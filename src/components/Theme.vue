@@ -13,7 +13,7 @@
                 <p class="author">Oscar Wilde</p>
                 <p class="go">A vos crayons, prêt ? Dessinez !</p>
                 <div class= "galery-button">
-                    Galerie croquis
+                    <router-link tag="a" to="/galerie"><a>Galerie Croquis</a></router-link>
                     <span></span><span></span><span></span><span>
                 </div>
             </div>
@@ -25,7 +25,7 @@
                 <p class="author">Proverbe</p>
                 <p class="go">A vos crayons, prêt ? Dessinez !</p>
                 <div class= "galery-button">
-                    Galerie planches
+                    <router-link tag="a" to="/galerie"><a>Galerie Planche</a></router-link>
                     <span></span><span></span><span></span><span>
                 </div>
             </div>
@@ -41,7 +41,9 @@
                     </defs>
                     <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="266" height="50"></rect>
                 </svg>
-                <span>Participer</span>
+                <div class="galery-button">
+               <router-link tag="a" to="/ajout"><a>PARTICIPER</a></router-link> 
+               </div>
             </a>
         </div>
     </div>
