@@ -18,8 +18,10 @@
             </div>
             <div class="nav-links">
                 <router-link tag="a" to="/"><a>HOME</a></router-link>
+
                 <router-link tag="a" to="/a-propos"><a>ABOUT US</a></router-link>
                 <router-link tag="a" to="/contact"><a>CONTACT</a></router-link>
+
                 <router-link tag="a" to="/connexion"><a>LOGIN</a></router-link>
                 <router-link tag="a" to="/inscription"><a class="register-button">GET STARTED</a></router-link>
             </div>
@@ -45,8 +47,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 130vh;
+
     width: 100vw;
     
+
 }
 
 .logo {
@@ -109,12 +113,14 @@
   color: #e53120;
 }
 
+
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 601px) and (max-width: 991px) {
   .register-button {
     font-size: 0.7rem;
   }
 }
+
 
 * {
     box-sizing: border-box;
@@ -237,3 +243,4 @@ body {
 }
 
 </style>
+

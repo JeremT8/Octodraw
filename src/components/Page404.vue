@@ -8,14 +8,12 @@
         </div>
     </div>
 </template>
-
 <script>
 export default {
-    
 }
 </script>
-
 <style lang="scss" scoped>
+
 
 
 
@@ -47,13 +45,15 @@ export default {
   background-image: url("https://media.gettyimages.com/illustrations/vatican-museums-and-galleries-vatican-city-italy-illustration-id55994891?k=6&m=55994891&s=612x612&w=0&h=EFXGalQosq4v-0LGZdL3sh_DHK8Ybb2ZXHraUqg8eNw=");
   background-color: #cccccc;
   height: 500px;
+
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-}
 
+  position: relative;
+
+}
 .button{
   border: none;
   color: white;
@@ -67,5 +67,4 @@ export default {
   margin: 20px 0 0 0;
   cursor: pointer;
 }
-
 </style>

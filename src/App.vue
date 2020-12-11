@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+
     <!-- <HeaderConnected></HeaderConnected> -->
     <!-- <Header></Header> -->
     <!-- On prévoit que cette zone (entre header et footer) est la partie dynamique de l'app => selon la page demandée, on affiche un composant différent -->
@@ -7,6 +8,7 @@
     <router-view></router-view>
     <!-- <Footer></Footer> -->
     <!-- <FooterConnected></FooterConnected> -->
+
 
   </div>
 </template>
@@ -16,6 +18,7 @@ import Vue from 'vue';
 
 import Header from  "./components/Header";
 import HeaderConnected from "./components/HeaderConnected";
+
 
 import Footer from "./components/Footer";
 import FooterConnected from "./components/FooterConnected";
@@ -32,7 +35,9 @@ export default Vue.extend({
     HeaderConnected,
     Header,
     FooterConnected,
+
     Footer,
+
 
   }
 });

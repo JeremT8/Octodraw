@@ -20,10 +20,12 @@
                 <router-link tag="a" to="/"><a>HOME</a></router-link>
                 <router-link tag="a" to="/a-propos"><a>ABOUT US</a></router-link>
                 <router-link tag="a" to="/contact"><a>CONTACT</a></router-link>
+
                 <router-link tag="a" to="/connexion"><a>LOGIN</a></router-link>
                 <router-link tag="a" to="/inscription"><a class="register-button">GET STARTED</a></router-link>
             </div>
         </div>
+
     </header>
 </template>
 <script>
@@ -40,6 +42,7 @@
     }
 </script>
 <style lang="scss" scoped>
+
 .header {
     background-image: url("../assets/images/grande_vague_bleue_octodraw.svg");
     background-repeat: no-repeat;
@@ -47,6 +50,7 @@
     height: 130vh;
     width: 100vw;
 }
+
 
 .logo {
     width: 4%;
@@ -65,6 +69,7 @@
     margin-top: 1.3rem;
     width: 6%;
   }
+
 }
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
@@ -72,6 +77,7 @@
   .logo {
     width: 8%;
   }
+
 }
 
 .register-button {
@@ -79,6 +85,7 @@
     color: #ecf4e9;
     border-radius: 30px;
     background-image: linear-gradient(to right, #ab3120 , #e53120);
+
     padding: 10px 32px;
     text-align: center;
     text-decoration: none;
@@ -100,14 +107,17 @@
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 601px) and (max-width: 991px) {
+
   .register-button {
     font-size: 0.7rem;
   }
 }
 
+
 .register-button:hover {
   color: #0d2578;
 }
+
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 601px) and (max-width: 991px) {
@@ -115,6 +125,7 @@
     font-size: 0.7rem;
   }
 }
+
 
 * {
     box-sizing: border-box;
@@ -198,9 +209,11 @@ body {
         padding: 13px;
     }
 
+
     .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
         background-color: rgba(0, 0, 0, 0.3);
     }
+
 
     .nav > .nav-btn > label > span {
         display: block;
@@ -209,7 +222,7 @@ body {
         border-top: 2px solid #ecf4e9;
 
     }
-    
+
     .nav > .nav-links {
         position: absolute;
         display: block;
@@ -227,9 +240,11 @@ body {
         width: 100%;
     }
 
+
     .nav > #nav-check:not(:checked) ~ .nav-links {
         height: 0px;
     }
+
 
     .nav > #nav-check:checked ~ .nav-links {
         height: calc(100vh - 50px);
@@ -238,3 +253,4 @@ body {
 }
 
 </style>
+
