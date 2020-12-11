@@ -1,6 +1,5 @@
 <template>
   <form v-on:submit.prevent="onFormSubmit">
-          <h1>IMMERSE YOURSELF NOW</h1>
           <fieldset>
             <div class="add-drawing">
               <img class="drawing" src="">

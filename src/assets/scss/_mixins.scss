@@ -1,5 +1,5 @@
 /**
-* cette mixin permet d'appliquer une gouttière (une marge externe) autour d'un élément. Il peut y avoir 3 tailles de gouttière différentes : 'small', 'normal', 'large' */
+ cette mixin permet d'appliquer une gouttière (une marge externe) autour d'un élément. Il peut y avoir 3 tailles de gouttière différentes : 'small', 'normal', 'large' */
 @mixin applyGutter($size) {
   // en fonction de la valeur de $size, on applique une marge différente
   @if ($size == 'small') {

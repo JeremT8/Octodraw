@@ -2,6 +2,7 @@
   
   <div class="contactform">
 
+
   <div class="contact-effect">
     <span>O</span>
     <span>'</span>
@@ -18,6 +19,7 @@
   <p class="contact-quote">« Nous devenons ce que nous sommes à travers notre contact au monde, aux autres »</p>
   <p class="contact-author">Natascha Kampusch</p>
 </section>
+
       
     <b-form-group
       id="fieldset-1"
@@ -161,7 +163,9 @@ export default {
   padding: 20px 40px;
   border-radius: 30px;
   background-image: linear-gradient(to right, #0d2578 , #0d2638);
+
   color: #e53120;
+
   margin: 5% 15%;
   font-family: Comfortaa Bold;
   font-size: 1.2em;
@@ -178,6 +182,7 @@ export default {
   font-size: 16px;
   margin: 20px 0 0 0;
   cursor: pointer;
+
 }
 
 @media (min-width: 992px) {
@@ -205,6 +210,7 @@ export default {
   .contactform {
     text-align:center;
     margin: 45% 15%;
+
   }
 }
 
@@ -215,6 +221,7 @@ export default {
     text-align: center;
     padding: 10px 22px;
   }
+
 
   .contactform {
     text-align:center;
@@ -294,6 +301,7 @@ section p {
   font-weight: bold;
   color: #ecf4e9;
   margin-bottom: 4rem;
+
 }
 
 </style>

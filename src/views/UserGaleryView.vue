@@ -3,19 +3,19 @@
     les views seront instanciées par le routeur -->
     <main class="main-container">
         <Header></Header>
-        <Carousel></Carousel>
+        <UserGalery></UserGalery>
         <Footer></Footer>
-    </main> 
+    </main>
 </template>
 
 <script>
 import Header from  "../components/Header";
 import Footer from "../components/Footer";
-import Carousel from '../components/Carousel';
+import UserGalery from '../components/UserGalery';
 
 export default {
     components: {
-        Carousel,
+        UserGalery,
         Header,
         Footer,
     }

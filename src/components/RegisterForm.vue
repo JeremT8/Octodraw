@@ -1,81 +1,85 @@
 <template>
   <div>
     <!-- On écoute l'événement "submit" pour gérer nous-même la soumission -->
-
+      
     <!-- affichage conditionnel : Si registrationSucces vaut true, on n'affiche pas le formulaire => v-if / v-else -->
-    <div class="success-message" v-if="registrationSuccess">
-      <h2>Félicitations ! :tada:</h2>
-      <p>Inscription confirmée !</p>
-      <div class="success-message__nav">
-        <router-link class="button" to="/">Retour à l'accueil</router-link>
+    <div class="registerform">
+      <div class="success-message" v-if="registrationSuccess">
+        <h2>Félicitations ! :tada:</h2>
+        <p>Inscription confirmée !</p>
+        <div class="success-message__nav">
+          <router-link class="button" to="/">Retour à l'accueil</router-link>
+        </div>
       </div>
+      
+      <!-- condition du v-if précédent est true -->
+    
+      <form v-on:submit.prevent="onFormSubmit" v-else>
+        <fieldset>
+          <div class="field" v-bind:class="{ 'field--error': !!errors.firstname }">
+            <b-form-group
+              id="fieldset-1"
+              label="Prénom"
+              label-for="input-1"
+            >
+            <b-form-input id="input-1" v-model="firstname" trim></b-form-input>
+            <div class="error-message">{{ errors.firstname }}</div>
+          </div>
+          <div class="field" v-bind:class="{ 'field--error': !!errors.lastname }">
+            <b-form-group
+              id="fieldset-2"
+              label="Nom"
+              label-for="input-2"
+            >
+            <b-form-input id="input-2" v-model="lastname" trim></b-form-input>
+            <div class="error-message">{{ errors.lastname }}</div>
+          </div>
+          <div class="field" v-bind:class="{ 'field--error': !!errors.email }">
+            <b-form-group
+              id="fieldset-3"
+              label="Email"
+              label-for="input-3"
+            >
+            <b-form-input id="input-3" v-model="email" trim></b-form-input>
+            <div class="error-message">{{ errors.email }}</div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="field" v-bind:class="{ 'field--error': !!errors.username }">
+            <b-form-group
+              id="fieldset-4"
+              label="Identifiant"
+              label-for="input-4"
+            >
+            <b-form-input id="input-4" v-model="username" trim></b-form-input>
+            <div class="error-message">{{ errors.username }}</div>
+          </div>
+          <div class="field" v-bind:class="{ 'field--error': !!errors.password }">
+            <b-form-group
+              id="fieldset-5"
+              label="Mot de passe"
+              label-for="input-5"
+            >
+            <b-form-input id="input-5" v-model="password" trim></b-form-input>
+            <div class="error-message">{{ errors.password }}</div>
+          </div>
+          <div class="field" v-bind:class="{ 'field--error': !!errors.confirmPassword }">
+            <b-form-group
+              id="fieldset-5"
+              label="Confirmer le mot de passe"
+              label-for="input-5"
+            >
+            <b-form-input id="input-5" v-model="confirmPassword" trim></b-form-input>
+            <div class="error-message">{{ errors.confirmPassword }}</div>
+          </div>
+        </fieldset>
+        <div class="error-message" v-if="registrationFailure">
+          <strong>Une erreur s'est produite lors de l'inscription : </strong>
+          {{ registrationFailureMessage }}
+        </div>
+        <button class="button">OCTOSUBMIT</button>
+      </form>
     </div>
-    <!-- v-else interdit à ce formulaire de s'afficher si la condition du v-if précédent est true -->
-    <form v-on:submit.prevent="onFormSubmit" v-else>
-      <fieldset>
-        <div class="field" v-bind:class="{ 'field--error': !!errors.firstname }">
-          <input
-            class="field__input"
-            type="text"
-            placeholder="Prenom"
-            v-model="firstname"
-          />
-          <div class="error-message">{{ errors.firstname }}</div>
-        </div>
-        <div class="field" v-bind:class="{ 'field--error': !!errors.firstname }">
-          <input 
-            class="field__input" 
-            type="text"
-            placeholder="Nom"
-            v-model="lastname"
-          />
-          <div class="error-message">{{ errors.lastname }}</div>
-        </div>
-        <div class="field" v-bind:class="{ 'field--error': !!errors.firstname }">
-          <input
-            class="field__input"
-            type="text"
-            placeholder="Adresse e-mail"
-            v-model="email"
-          />
-          <div class="error-message">{{ errors.email }}</div>
-        </div>
-      </fieldset>
-      <fieldset>
-        <div class="field" v-bind:class="{ 'field--error': !!errors.firstname }">
-          <input 
-            class="field__input"
-            type="text"
-            placeholder="Identifiant"
-            v-model="username"
-          />
-          <div class="error-message">{{ errors.username }}</div>
-        </div>
-        <div class="field" v-bind:class="{ 'field--error': !!errors.firstname }">
-          <input
-            class="field__input"
-            type="password"
-            placeholder="Mot de passe"
-            v-model="password"
-          />
-          <div class="error-message">{{ errors.password }}</div>
-        </div>
-        <div class="field" v-bind:class="{ 'field--error': !!errors.firstname }">
-          <input
-            class="field__input"
-            type="password"
-            placeholder="Confirmez le mot de passe"
-            v-model="confirmPassword"
-          />
-          <div class="error-message">{{ errors.confirmPassword }}</div>
-        </div>
-      </fieldset>
-      <div class="error-message" v-if="registrationFailure">
-        <strong>Une erreur s'est produite lors de l'inscription : </strong>
-        {{ registrationFailureMessage }}
-      </div>
-      <button class="button">OCTOSUBMIT</button>
-    </form>
   </div>
 </template>
 
@@ -85,12 +89,12 @@ export default {
     data() {
       // attention, on déclare les valeurs par défaut, '' (string vide pour les strings => si on fait un traitement (lecture de la data) et que la valeur est null, on déclenche un erreur 
         return {
-            firstname: 'john',
-            lastname: 'doe',
-            email: 'hal@pague.com',
-            username: 'kraken_hal',
-            password: '123456',
-            confirmPassword: '123456',
+            firstname: '',
+            lastname: '',
+            email: '',
+            username: '',
+            password: '',
+            confirmPassword: '',
             // on déclare tout l'objet (avec les propriétés enfant, même nulles ou '')
             errors: {
               firstname: '',
@@ -213,5 +217,31 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.registerform{
+  text-align:center;
+  margin: 5% 25%;
+  padding: 20px 40px;
+  border-radius: 30px;
+  background-image: linear-gradient(to right, #e53120 , #ab3120);
+  color: #0d2578;
+
+  font-family: Comfortaa Medium;
+}
+
+.button{
+  border: none;
+  color: white;
+  border-radius: 30px;
+  background-image: linear-gradient(to right, #0d2578 , #0d2638);
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 0 0 0;
+  cursor: pointer;
+}
+
+
 
 </style>
