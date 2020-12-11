@@ -1,6 +1,25 @@
 <template>
   
   <div class="contactform">
+
+
+  <div class="contact-effect">
+    <span>O</span>
+    <span>'</span>
+    <span>C</span>
+    <span>T</span>
+    <span class="letter"></span>
+    <span>D</span>
+    <span>R</span>
+    <span>A</span>
+    <span>W</span>
+</div>
+<section>
+  <p class="contact-link">En dessin, aucune distanciation subsiste; il sera le trait d’union entre vous et nous.</p>
+  <p class="contact-quote">« Nous devenons ce que nous sommes à travers notre contact au monde, aux autres »</p>
+  <p class="contact-author">Natascha Kampusch</p>
+</section>
+
       
     <b-form-group
       id="fieldset-1"
@@ -144,7 +163,9 @@ export default {
   padding: 20px 40px;
   border-radius: 30px;
   background-image: linear-gradient(to right, #0d2578 , #0d2638);
-  color: #ecf4e9;
+
+  color: #e53120;
+
   margin: 5% 15%;
   font-family: Comfortaa Bold;
   font-size: 1.2em;
@@ -161,7 +182,7 @@ export default {
   font-size: 16px;
   margin: 20px 0 0 0;
   cursor: pointer;
-  
+
 }
 
 @media (min-width: 992px) {
@@ -185,13 +206,11 @@ export default {
     text-align: center;
     padding: 10px 22px;
   }
+
   .contactform {
     text-align:center;
-
     margin: 45% 15%;
-    
 
- 
   }
 }
 
@@ -202,17 +221,87 @@ export default {
     text-align: center;
     padding: 10px 22px;
   }
+
+
   .contactform {
     text-align:center;
     margin: 15% 10%;
-    
   }
 }
 
-
-
 .mt-3{
   padding-bottom: 0.8%;
+}
+
+/* OCTODRAW CONTACT EFFECT START */
+
+span{
+	margin: 0 15px;
+	animation: span 3s ease-in infinite alternate;
+  font-family: "Comfortaa Bold";
+  color: #ecf4e9;
+}
+
+.contact-effect{
+  width: 100%;
+  margin-top: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: sans-serif;
+	font-size: 42px;
+}
+
+.letter{
+	display: inline-flex;
+	height: 26px;
+	width: 20px;
+	border: 4px solid #ecf4e9;
+  margin-top: -0.2rem;
+	border-radius: 25px;
+	animation: letter 3s ease-in-out infinite alternate;
+}
+
+@keyframes span {
+	0%,30%{ margin: 0 15px; }
+	70%,100%{ margin: 0 5px; }
+}
+
+@keyframes letter {
+	0%,30%{ width: 27px; }
+	70%,100%{ width: 30vw; }
+}
+
+/* OCTODRAW CONTACT EFFECT END */
+
+section p {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-link {
+  font-family: Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #ecf4e9;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.contact-quote {
+  font-size: 1rem;
+  font-family: Helvetica, sans-serif;
+  font-style: italic;
+  color: #ecf4e9;
+}
+
+.contact-author {
+  font-size: 1rem;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  color: #ecf4e9;
+  margin-bottom: 4rem;
+
 }
 
 </style>

@@ -1,13 +1,15 @@
 <template>
 
-    <footer class="footer">       
-            <nav class="footer-container-links">
+    <footer class="footer">
+            <div class="footer-links">
+
                 <ul>
                     <li><router-link to="/">Home</router-link></li>
                     <li><router-link to="/a-propos">About us</router-link></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-            </nav>
+
+            </div>
 
     </footer>
 </template>
@@ -16,8 +18,11 @@
     }
 </script>
 <style lang="scss" scoped>
-.footer{
-    background-image: url("../assets/images/vague_rouge_inversee_octodraw.svg");
+
+
+.footer {
+    background-image: url("../assets/images/vague_rouge_inversee_octodraw2.svg");
+
     background-repeat: no-repeat;
     background-size:cover;
     height: 40vh;
@@ -28,15 +33,14 @@
     position: relative;
     top: 0px;
     left: 0px;
-    .footer-container-links {
-        list-style:none;
-    }
+
 }
 
-nav {
+.footer-links {
       color: #ecf4e9;
       margin-bottom: 1rem;
       width: 100%;
+      list-style:none;
 
       a {
         font-weight: bold;

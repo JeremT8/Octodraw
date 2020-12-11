@@ -2,8 +2,9 @@
     <!-- le rôle des views est d'instancier les éléments qui composent une page
     les views seront instanciées par le routeur -->
     <main class="main-container">
-        <Header></Header>
-        <h1 class="register-button">Qui sommes nous ?</h1>
+
+        <h1 class="register-button">LA O'CTOTEAM</h1>
+
         <AboutUs></AboutUs>
         <Footer></Footer>
     </main>
@@ -38,9 +39,28 @@ export default {
     font-size: 32px;
     margin: auto;
     text-transform: uppercase;
-    margin-top: 1rem;
+    margin-top: 8rem;
     width: 50%;
     font-weight: bold;
     }
+
+    /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+    @media screen and (min-width: 601px) and (max-width: 991px) {
+    .register-button {
+        font-size: 2.5rem;
+        width: 78%;
+        border-radius: 40px;
+        margin-top: 10rem;
+    }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+    @media screen and (max-width: 600px) {
+    .register-button {
+        font-size: 1.2rem;
+        width: 63%;
+        margin-top: 7rem;
+  }
+}
 
 </style>

@@ -1,153 +1,172 @@
 <template>
-    <div class="card-avatar">
-        <div>
-        <b-card title="VANINA" img-src="https://upload.wikimedia.org/wikipedia/commons/6/69/Octopus_pallidus_1.jpeg" img-alt="Image" img-top tag="article" style="max-width: 20rem;" class="mb-2">
-                <b-card-text>
-                Product Owner & Scrum Master
-                </b-card-text>
-        </b-card>
-        </div>
-    <div>
-        <b-card title="WENDY" img-src="https://upload.wikimedia.org/wikipedia/commons/7/73/CaliforniaTwoSpotOctopus1.jpg" img-alt="Image" img-top tag="article" style="max-width: 20rem;" class="mb-2">
-                <b-card-text>
-                Lead Dev Front
-                </b-card-text>
-        </b-card>
-    </div>
-    <div>
-        <b-card title="JEREMY" img-src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Octopus_cyanea_Maldives.JPG/1280px-Octopus_cyanea_Maldives.JPG" img-alt="Image" img-top tag="article" style="max-width: 20rem;" class="mb-2">
-                <b-card-text>
-                Git Master
-                </b-card-text>
-        </b-card>
-    </div>
-    <div>
-        <b-card title="BENOIT" img-src="https://upload.wikimedia.org/wikipedia/commons/3/33/Octopus3.jpg" img-alt="Image" img-top tag="article" style="max-width: 20rem;" class="mb-2">
-                <b-card-text>
-                Lead Dev Back
-                </b-card-text>
-        </b-card>
-    </div>
+    <!-- le rôle des views est d'instancier les éléments qui composent une page
+    les views seront instanciées par le routeur -->
+    <main class="main-container">
+        <h1 class="register-button">LA O'CTOTEAM</h1>
 
-
-
-
-
-
-<div class="column">
-  <div>
-    <figure><img src="https://picsum.photos/300/200?image=244" /></figure>
-    <span>Hover</span>
-  </div>
-  <div>
-    <figure><img src="https://picsum.photos/300/200?image=1024" /></figure>
-    <span>Hover</span>
-  </div>
-  <div>
-    <figure><img src="https://picsum.photos/300/200?image=611" /></figure>
-    <span>Hover</span>
-  </div>
+        <div class="contact-effect">
+	<span>O</span>
+	<span>'</span>
+	<span>C</span>
+	<span>T</span>
+	<span class="letter"></span>
+	<span>D</span>
+	<span>R</span>
+  <span>A</span>
+  <span>W</span>
 </div>
+<section>
+<p class="contact-link">En dessin, aucune distanciation subsiste; il sera le trait d’union entre vous et nous.</p>
+<p class="contact-quote">« Nous devenons ce que nous sommes à travers notre contact au monde, aux autres »</p>
+<p class="contact-author">Natascha Kampusch</p>
+</section>
 
 
-    </div>
+        <AboutUs></AboutUs>
+    </main>
 </template>
 
 <script>
-    export default {
-        
+import AboutUs from '../components/AboutUs';
+export default {
+    components: {
+        AboutUs
     }
+}
+
 </script>
 
 <style lang="scss" scoped>
-    img {
-        margin-left: 0;
-        width: 20rem;
-        height: 20rem;
-        	-webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+
+    .main-container {
+        margin-top: 4rem;
     }
 
-img:hover {
-	-webkit-transform: scale(1.3);
-	transform: scale(1.3);
-}
-
-    .card-avatar {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center; 
-        margin-top: 2rem;
-        font-weight: bold;
-        font-size: 1rem;
+    .register-button {
+    border: none;
+    color: #ecf4e9;
+    border-radius: 30px;
+    background-image: linear-gradient(to right, #ab3120 , #e53120);
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 32px;
+    margin: auto;
+    text-transform: uppercase;
+    margin-top: 8rem;
+    width: 50%;
+    font-weight: bold;
     }
 
-    .mb-2 {
-        text-align: center;
-        margin-right: 1rem;
+    /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+    @media screen and (min-width: 601px) and (max-width: 991px) {
+    .register-button {
+        font-size: 2.5rem;
+        width: 78%;
+        border-radius: 40px;
+        margin-top: 10rem;
     }
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    .column {
-	margin: 15px 15px 0;
-	padding: 0;
 }
-.column:last-child {
-	padding-bottom: 60px;
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+    @media screen and (max-width: 600px) {
+    .register-button {
+        font-size: 1.2rem;
+        width: 63%;
+        margin-top: 7rem;
+  }
 }
-.column div {
-	position: relative;
-	float: left;
-	width: 300px;
-	height: 200px;
-	margin: 0 0 0 25px;
-	padding: 0;
+
+
+
+
+
+
+
+
+span{
+	margin: 0 15px;
+	line-height: .7;
+	text-shadow: 0 0 2px rgba(0, 0, 0, .45);
+	animation: span 3s ease-in infinite alternate;
 }
-.column div:first-child {
-	margin-left: 0;
+.contact-effect{
+	justify-content: center;
+  width: 100%;
+  margin-top: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: sans-serif;
+	font-size: 42px;
+	background: #f7f7f7;
 }
-.column div span {
-	position: absolute;
-	bottom: -20px;
-	left: 0;
-	z-index: -1;
-	display: block;
-	width: 300px;
-	margin: 0;
-	padding: 0;
-	color: #444;
-	font-size: 18px;
-	text-decoration: none;
-	text-align: center;
-	opacity: 0;
+.letter{
+	display: inline-flex;
+	height: 26px;
+	width: 20px;
+	/* border: 2.5px solid #FF1EAD; */
+	border: 4px solid black;
+  margin-top: -0.2rem;
+	border-radius: 25px;
+	box-shadow:
+		0 0 2px rgba(0, 0, 0, .75),
+		inset 0 0 2px rgba(0, 0, 0, .45);
+
+	animation: letter 3s ease-in-out infinite alternate;
 }
-figure {
-	width: 300px;
-	height: 200px;
-	margin: 0;
-	padding: 0;
-	background: #fff;
-	overflow: hidden;
+@keyframes span {
+	0%,30%{ margin: 0 15px; }
+	70%,100%{ margin: 0 5px; }
 }
-figure:hover+span {
-	bottom: -36px;
-	opacity: 1;
+@keyframes letter {
+	0%,30%{ width: 27px; }
+	70%,100%{ width: 30vw; }
 }
+
+.contact-quote {
+    font-size: 1rem;
+    font-family: Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.contact-author {
+    font-size: 1rem;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+
+
+
+
+section p {
+display: flex;
+justify-content: center;
+}
+
+.contact-link {
+    background-image: linear-gradient(
+      transparent calc(65% - 5px),
+      darken(red, 15%) 5px,
+    );
+    font-family: Helvetica, sans-serif;
+    background-size: 0;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    transition: 0.5s ease;
+  font-size: 1.2rem;
+  color: red;
+  text-align: center;
+      margin-top: 3rem;
+  }
+  
+  .contact-link:hover {
+      background-size: 100%;
+  }
+
+
+
 </style>
