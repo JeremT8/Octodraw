@@ -49,9 +49,13 @@
     background-image: url("../assets/images/grande_vague_rouge_octodraw.svg");
     background-repeat: no-repeat;
     background-size: cover;
-
     height: 130vh;
+
     width: 100vw;
+    z-index: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
 }
 .header-title {
     display: flex;

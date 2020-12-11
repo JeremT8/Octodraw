@@ -25,8 +25,9 @@
     bottom: 0;
     display: inline-flex; /* or inline-flex */
     align-items: flex-end;
-    /*position: fixed;*/
-    
+    position: relative;
+    top: 0px;
+    left: 0px;
     .footer-container-links {
         list-style:none;
     }
@@ -58,6 +59,7 @@ nav {
       }
 
 }
+
 
 
 </style>
