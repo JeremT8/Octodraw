@@ -17,7 +17,7 @@
 </script>
 <style lang="scss" scoped>
 .footer{
-    background-image: url("../assets/images/vague_rouge_inversee_octodraw2.svg");
+    background-image: url("../assets/images/vague_bleue_inversee_octodraw.svg");
     background-repeat: no-repeat;
     background-size:cover;
     height: 40vh;
@@ -25,9 +25,8 @@
     bottom: 0;
     display: inline-flex; /* or inline-flex */
     align-items: flex-end;
-    position: relative;
-    top: 0px;
-    left: 0px;
+    /*position: fixed;*/
+    
     .footer-container-links {
         list-style:none;
     }
@@ -57,9 +56,9 @@ nav {
           display: flex;
           justify-content: center;
       }
+      
 
 }
-
 
 
 </style>
