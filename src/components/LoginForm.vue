@@ -1,5 +1,5 @@
 <template>
-  <form class="formlogin" v-on:submit.prevent="onFormSubmit">
+  <form v-on:submit.prevent="onFormSubmit">
     <fieldset>
       <div class="field">
         <h1 style="text-align: center">WE ARE WAITING FOR YOU</h1>
@@ -16,9 +16,7 @@
       </div>
     </fieldset>
   </form>
-  
 </template>
-
 <script>
 import userService from '../services/UserService';
 export default {
@@ -28,11 +26,10 @@ export default {
             password: '',
             errors: {
                 username: '',
-                password: '',
+                password: ''
             }
         };
     },
-    
     methods: {
         onFormSubmit(event) {
             // voir RegisterForm pour le fonctionnement de la validation
@@ -55,7 +52,6 @@ export default {
             if (hasErrors) {
                 return;
             }  
-            
             // connectuser retourne la promesse d'axios
             userService.connectUser(this.username, this.password)
             .then(() => {
@@ -68,25 +64,11 @@ export default {
     }
 };
 </script>
-
 <style lang="scss" scoped>
-
-
-.formlogin {
-    border-radius: 15px;
-    padding: 40px;
-    width: 350px;
-    height: 150px;
-    background-image: linear-gradient(to right, #0d2578 , #0d2638);
-    color: white;
-}
-
-
 .error-message {
   color: #e53120;
   margin-top: 1rem;
 }
-
 .field {
      text-align: center;
      margin: auto;
@@ -95,8 +77,6 @@ export default {
      color: black;
      display: block;
 }
-
-
 input {
       border-radius: 20px;
       padding-left: 1rem;
@@ -104,22 +84,18 @@ input {
       padding-bottom: 0.5rem;
       width: 70%;
 }
-
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
   input {
     width: 85%;
   }
 }
-
 label {
   color: #ecf4e9;
   text-align: right;
   display: inline-block;
   width:20%;
 }
-
-
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
   label {
@@ -127,7 +103,6 @@ label {
     text-align: center;
   }
 }
-
 .button {
   border: none;
   color: #ecf4e9;
@@ -141,18 +116,15 @@ label {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
   .button {
     margin-top: 1rem;
   }
 }
-
 .underline{
   border-bottom: 1px solid #ecf4e9;
 }
-
 h1 {
     font-family: "Comfortaa Bold";
     color: #ecf4e9;
@@ -163,28 +135,24 @@ h1 {
     display: block;
     margin-bottom: 2rem;
 }
-
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 601px) and (max-width: 991px) {
   h1 {
     font-size: 1.5rem;
   }
 }
-
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
   h1 {
     font-size: 1rem;
   }
 }
-
 p {
   text-align: center;
   font-family: Helvetica, sans-serif;
   color: #ecf4e9;
   margin-bottom: 2rem;
 }
-
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
   p {
@@ -194,5 +162,4 @@ p {
     margin-bottom: 2rem;
   }
 }
-
 </style>

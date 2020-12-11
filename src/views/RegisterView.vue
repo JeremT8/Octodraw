@@ -2,26 +2,29 @@
     <!-- le rôle des views est d'instancier les éléments qui composent une page
     les views seront instanciées par le routeur -->
     <div>
-        <main>
-            <h1>Créer un compte</h1>
+        <main class="main-container">
+          <Header></Header>
             <div class="bla">
                 
-                        <img class="illustrateur" src="../assets/images/illustrateur_octodraw.svg">
-                
-                
-                        <img class="amateur" src="../assets/images/amateur_octodraw.svg">
+              <img class="illustrateur" src="../assets/images/illustrateur_octodraw.svg">      
+              <img class="amateur" src="../assets/images/amateur_octodraw.svg">
                 
             </div>
-            <RegisterForm></RegisterForm>
+          <RegisterForm></RegisterForm>
+          <Footer></Footer>
         </main>
     </div>
 </template>
 
 <script>
+import Header from  "../components/Header";
+import Footer from "../components/Footer";
 import RegisterForm from '../components/RegisterForm';
 export default {
     components: {
-        RegisterForm
+        RegisterForm,
+        Header,
+        Footer,
     }
 }
 </script>
@@ -58,14 +61,14 @@ export default {
     width:20%;
     display: block;
     margin: auto;
-    margin-bottom: -3.6rem;
+    margin-bottom: -6rem;
     margin-right: 0 !important;
 }
 .amateur {
     width:20%;
     display: block;
     margin: auto;
-    margin-bottom: -3.6rem;
+    margin-bottom: -6rem;
     margin-left: 0 !important;
 }
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
